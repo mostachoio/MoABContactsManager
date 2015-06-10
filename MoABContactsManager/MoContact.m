@@ -7,8 +7,13 @@
 //
 
 #import "MoContact.h"
+#import "MoContactSerializer.h"
 
 @implementation MoContact
 
+- (NSDictionary *)asDictionary
+{
+    return [[MoContactSerializer sharedInstance] serializeContact:self];
+}
 
 @end

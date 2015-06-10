@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MoABContactsManager.h"
+#import "MoContactSerializer.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,8 @@
     [[MoABContactsManager sharedManager] contacts:^(ABAuthorizationStatus authorizationStatus, NSArray *contacts) {
         
         if (authorizationStatus == kABAuthorizationStatusAuthorized) {
-            NSLog(@"Contacts = %@", contacts);
+            
+        
         }else {
             NSLog(@"No permissions!");
         }

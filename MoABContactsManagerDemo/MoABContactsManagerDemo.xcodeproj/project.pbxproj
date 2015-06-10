@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10E5BB61B283FC800AB8C12 /* MoContactSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F10E5BB51B283FC800AB8C12 /* MoContactSerializer.m */; };
 		F129431C1B23D29400C909ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F129431B1B23D29400C909ED /* main.m */; };
 		F129431F1B23D29400C909ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F129431E1B23D29400C909ED /* AppDelegate.m */; };
 		F12943221B23D29400C909ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F12943211B23D29400C909ED /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F10E5BB41B283FC800AB8C12 /* MoContactSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoContactSerializer.h; path = ../../MoABContactsManager/MoContactSerializer.h; sourceTree = "<group>"; };
+		F10E5BB51B283FC800AB8C12 /* MoContactSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoContactSerializer.m; path = ../../MoABContactsManager/MoContactSerializer.m; sourceTree = "<group>"; };
 		F12943161B23D29400C909ED /* MoABContactsManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoABContactsManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F129431A1B23D29400C909ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F129431B1B23D29400C909ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				F12943401B23D2E400C909ED /* MoABContactsManager.m */,
 				F15757081B27B760006F7914 /* MoContact.h */,
 				F15757091B27B760006F7914 /* MoContact.m */,
+				F10E5BB41B283FC800AB8C12 /* MoContactSerializer.h */,
+				F10E5BB51B283FC800AB8C12 /* MoContactSerializer.m */,
 			);
 			name = MoABContactsManager;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				F12943411B23D2E400C909ED /* MoABContactsManager.m in Sources */,
 				F129431F1B23D29400C909ED /* AppDelegate.m in Sources */,
 				F157570A1B27B760006F7914 /* MoContact.m in Sources */,
+				F10E5BB61B283FC800AB8C12 /* MoContactSerializer.m in Sources */,
 				F129431C1B23D29400C909ED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

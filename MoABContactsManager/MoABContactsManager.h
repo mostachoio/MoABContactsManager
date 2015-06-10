@@ -14,7 +14,8 @@
 
 + (instancetype)sharedManager;
 
-
 - (void)contacts:(void(^)(ABAuthorizationStatus authorizationStatus, NSArray *contacts))contactsBlock;
+- (void)contactsIncludingOriginalProfilePicture:(BOOL)shouldIncludeOriginalProfilePicture contactsBlock:(void (^)(ABAuthorizationStatus, NSArray *))contactsBlock;
+
 
 @end

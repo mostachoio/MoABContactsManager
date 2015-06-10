@@ -7,11 +7,13 @@
 //
 
 #import "MoABContactsManager.h"
-
+#import "MoContactSerializer.h"
 
 @interface MoABContactsManager ()
 
 @property (nonatomic) ABAddressBookRef addressBook;
+
+@property (strong, nonatomic) MoContactSerializer *contactSerializer;
 
 @end
 
@@ -31,17 +33,30 @@
 
 - (instancetype)init
 {
-    if (!(self == [super init])) return nil;
-    
-    _addressBook =ABAddressBookCreateWithOptions(NULL, nil);
+    self = [super init];
+    if (self) {
+        _addressBook =ABAddressBookCreateWithOptions(NULL, nil);
+    }
     
     return self;
 }
 
+- (void)dealloc
+{
+    CFRelease(_addressBook);
+}
+
 #pragma mark - Publics
+
 
 - (void)contacts:(void (^)(ABAuthorizationStatus, NSArray *))contactsBlock
 {
+    [self contactsIncludingOriginalProfilePicture:NO contactsBlock:contactsBlock];
+}
+
+- (void)contactsIncludingOriginalProfilePicture:(BOOL)shouldIncludeOriginalProfilePicture contactsBlock:(void (^)(ABAuthorizationStatus, NSArray *))contactsBlock
+{
+    
     ABAuthorizationStatus abAuthStatus = ABAddressBookGetAuthorizationStatus();
     
     switch (abAuthStatus) {
@@ -58,7 +73,8 @@
             
             ABAddressBookRequestAccessWithCompletion(_addressBook, ^(bool granted, CFErrorRef error) {
                 if (granted) {
-                    [self loadContactsFromAddressBookWithCompletionBlock:contactsBlock];
+                    
+                    [self loadContactsFromAddressBookIncludingOriginalProfilePicture:shouldIncludeOriginalProfilePicture withCompletionBlock:contactsBlock];
                 }else if (contactsBlock){
                     contactsBlock(kABAuthorizationStatusDenied, nil);
                 }
@@ -68,19 +84,18 @@
         }
         case kABAuthorizationStatusAuthorized:
         {
-            [self loadContactsFromAddressBookWithCompletionBlock:contactsBlock];
+            [self loadContactsFromAddressBookIncludingOriginalProfilePicture:shouldIncludeOriginalProfilePicture withCompletionBlock:contactsBlock];
             break;
         }
     }
-    
 }
 
 #pragma mark - Internals -
 
-- (void)loadContactsFromAddressBookWithCompletionBlock:(void(^)(ABAuthorizationStatus, NSArray *))contactsBlock
+- (void)loadContactsFromAddressBookIncludingOriginalProfilePicture:(BOOL)shouldIncludeOriginalProfilePicture withCompletionBlock:(void(^)(ABAuthorizationStatus, NSArray *))contactsBlock
 {
     
-    NSArray *contactsFromAB = (__bridge NSArray *)ABAddressBookCopyArrayOfAllPeople(_addressBook);
+    NSArray *contactsFromAB = (__bridge_transfer NSArray *)ABAddressBookCopyArrayOfAllPeople(_addressBook);
     
     NSMutableArray *contacts = [NSMutableArray array];
     
@@ -109,6 +124,10 @@
         
         [self setFullNameForContact:contact];
         
+        [contact setPhones:[self arrayFromProperty:kABPersonPhoneProperty ofContact:contactRecord]];
+        
+        [contact setEmails:[self arrayFromProperty:kABPersonEmailProperty ofContact:contactRecord]];
+        
         [contact setNickName:[self objectFromProperty:kABPersonNicknameProperty ofContact:contactRecord]];
         
         [contact setCompany:[self objectFromProperty:kABPersonOrganizationProperty ofContact:contactRecord]];
@@ -119,14 +138,16 @@
         
         [contact setBirthday:[self objectFromProperty:kABPersonBirthdayProperty ofContact:contactRecord]];
         
-        NSData *thumImageData = (__bridge NSData*)ABPersonCopyImageDataWithFormat(contactRecord, kABPersonImageFormatThumbnail);
+        NSData *thumImageData = (__bridge_transfer NSData*)ABPersonCopyImageDataWithFormat(contactRecord, kABPersonImageFormatThumbnail);
         if (thumImageData) {
             [contact setThumbnailProfilePicture:[UIImage imageWithData:thumImageData]];
         }
         
-        NSData *originalImageData = (__bridge NSData*)ABPersonCopyImageDataWithFormat(contactRecord, kABPersonImageFormatOriginalSize);
-        if (originalImageData) {
-            [contact setOriginalProfilePicture:[UIImage imageWithData:originalImageData]];
+        if (shouldIncludeOriginalProfilePicture) {
+            NSData *originalImageData = (__bridge_transfer NSData*)ABPersonCopyImageDataWithFormat(contactRecord, kABPersonImageFormatOriginalSize);
+            if (originalImageData) {
+                [contact setOriginalProfilePicture:[UIImage imageWithData:originalImageData]];
+            }
         }
         
         [contact setNote:[self objectFromProperty:kABPersonNoteProperty ofContact:contactRecord]];
@@ -150,12 +171,33 @@
 - (id)objectFromProperty:(ABPropertyID)property ofContact:(ABRecordRef)contact
 {
     CFTypeRef valueRef = ABRecordCopyValue(contact, property);
-    return valueRef ? (__bridge id)valueRef : nil;
+    id value = valueRef ? (__bridge_transfer id)valueRef : nil;
+    return value;
+}
+
+- (NSArray *)arrayFromProperty:(ABPropertyID)property ofContact:(ABRecordRef)contact
+{
+    ABMultiValueRef multiValueRef = ABRecordCopyValue(contact, property);
+    
+    NSMutableArray *result = [NSMutableArray array];
+    for (CFIndex i = 0; i < ABMultiValueGetCount(multiValueRef); i++) {
+        
+        NSString *value = (__bridge_transfer NSString *)(ABMultiValueCopyValueAtIndex(multiValueRef, i));
+        CFStringRef locLabel = ABMultiValueCopyLabelAtIndex(multiValueRef, i);
+        NSString *label =(__bridge_transfer NSString*)ABAddressBookCopyLocalizedLabel(locLabel);
+        
+        CFBridgingRelease(locLabel);
+        
+        [result addObject:@{label: value}];
+        
+    }
+    CFRelease(multiValueRef);
+    return result;
+    
 }
 
 - (void)setFullNameForContact:(MoContact *)contact
 {
-    
     NSArray *keys = @[@"prefix", @"firstName", @"middleName", @"lastName", @"suffix"];
     NSMutableString *fullName = [NSMutableString stringWithString:@""];
     
@@ -169,7 +211,6 @@
     }
     
     [contact setFullName:fullName];
-    
 }
 
 @end

@@ -31,6 +31,10 @@
 
 @property (strong, nonatomic) NSString *fullName;
 
+@property (strong, nonatomic) NSArray *phones;
+
+@property (strong, nonatomic) NSArray *emails;
+
 @property (strong, nonatomic) NSString *nickName;
 
 @property (strong, nonatomic) NSString *company;
@@ -50,5 +54,7 @@
 @property (strong, nonatomic) NSDate *createdAt;
 
 @property (strong, nonatomic) NSDate *updatedAt;
+
+- (NSDictionary *)asDictionary;
 
 @end
