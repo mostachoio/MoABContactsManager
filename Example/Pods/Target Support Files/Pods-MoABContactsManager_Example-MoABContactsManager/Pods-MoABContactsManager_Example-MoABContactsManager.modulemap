@@ -1,0 +1,6 @@
+framework module MoABContactsManager {
+  umbrella header "Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

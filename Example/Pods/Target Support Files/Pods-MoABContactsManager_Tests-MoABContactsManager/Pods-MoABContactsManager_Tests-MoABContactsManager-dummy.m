@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_MoABContactsManager_Tests_MoABContactsManager : NSObject
+@end
+@implementation PodsDummy_Pods_MoABContactsManager_Tests_MoABContactsManager
+@end
