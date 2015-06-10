@@ -8,9 +8,10 @@
 
 // https://github.com/Specta/Specta
 
+
 SpecBegin(InitialSpecs)
 
-describe(@"these will fail", ^{
+describe(@"Contact", ^{
 
     it(@"can do maths", ^{
         expect(1).to.equal(2);
