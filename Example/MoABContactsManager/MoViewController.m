@@ -7,17 +7,17 @@
 //
 
 #import "MoViewController.h"
-#import <Mo>
+#import <MoABContactsManager/MoABContactsManager.h>
 
-@interface ViewController () <MoABContactsManagerDelegate>
+@interface MoViewController () <MoABContactsManagerDelegate>
 
 @end
 
-@implementation ViewController
+@implementation MoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+  
     [[MoABContactsManager sharedManager] setDelegate:self];
     [[MoABContactsManager sharedManager] contacts:^(ABAuthorizationStatus authorizationStatus, NSArray *contacts) {
         
@@ -41,6 +41,7 @@
 }
 
 #pragma mark - MoABContactsManagerDelegate
+
 
 - (BOOL)moABContatsManager:(MoABContactsManager *)contactsManager shouldIncludeContact:(MoContact *)contact
 {

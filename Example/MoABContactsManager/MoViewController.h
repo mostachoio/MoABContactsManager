@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MoViewController.h : UIViewController
+@interface MoViewController : UIViewController
 
 
 @end
