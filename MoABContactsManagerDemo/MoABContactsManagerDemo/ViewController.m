@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MoABContactsManager.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    [[MoABContactsManager sharedManager] contacts:^(ABAuthorizationStatus authorizationStatus, NSArray *contacts) {
+        
+        if (authorizationStatus == kABAuthorizationStatusAuthorized) {
+            NSLog(@"Contacts = %@", contacts);
+        }else {
+            NSLog(@"No permissions!");
+        }
+        
+    }];
+
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,6 +15,7 @@
 		F129432A1B23D29500C909ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F12943281B23D29500C909ED /* LaunchScreen.xib */; };
 		F12943361B23D29500C909ED /* MoABContactsManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F12943351B23D29500C909ED /* MoABContactsManagerDemoTests.m */; };
 		F12943411B23D2E400C909ED /* MoABContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F12943401B23D2E400C909ED /* MoABContactsManager.m */; };
+		F157570A1B27B760006F7914 /* MoContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F15757091B27B760006F7914 /* MoContact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		F12943351B23D29500C909ED /* MoABContactsManagerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoABContactsManagerDemoTests.m; sourceTree = "<group>"; };
 		F129433F1B23D2E400C909ED /* MoABContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoABContactsManager.h; path = ../../MoABContactsManager/MoABContactsManager.h; sourceTree = "<group>"; };
 		F12943401B23D2E400C909ED /* MoABContactsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoABContactsManager.m; path = ../../MoABContactsManager/MoABContactsManager.m; sourceTree = "<group>"; };
+		F15757081B27B760006F7914 /* MoContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoContact.h; path = ../../MoABContactsManager/MoContact.h; sourceTree = "<group>"; };
+		F15757091B27B760006F7914 /* MoContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoContact.m; path = ../../MoABContactsManager/MoContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 			children = (
 				F129433F1B23D2E400C909ED /* MoABContactsManager.h */,
 				F12943401B23D2E400C909ED /* MoABContactsManager.m */,
+				F15757081B27B760006F7914 /* MoContact.h */,
+				F15757091B27B760006F7914 /* MoContact.m */,
 			);
 			name = MoABContactsManager;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				F12943221B23D29400C909ED /* ViewController.m in Sources */,
 				F12943411B23D2E400C909ED /* MoABContactsManager.m in Sources */,
 				F129431F1B23D29400C909ED /* AppDelegate.m in Sources */,
+				F157570A1B27B760006F7914 /* MoContact.m in Sources */,
 				F129431C1B23D29400C909ED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +438,7 @@
 				F129433B1B23D29500C909ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F129433C1B23D29500C909ED /* Build configuration list for PBXNativeTarget "MoABContactsManagerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +447,7 @@
 				F129433E1B23D29500C909ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

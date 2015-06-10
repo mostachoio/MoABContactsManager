@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AddressBook/AddressBook.h>
+#import "MoContact.h"
 
 @interface MoABContactsManager : NSObject
+
++ (instancetype)sharedManager;
+
+
+- (void)contacts:(void(^)(ABAuthorizationStatus authorizationStatus, NSArray *contacts))contactsBlock;
 
 @end
