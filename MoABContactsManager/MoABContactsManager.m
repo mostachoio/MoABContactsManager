@@ -36,6 +36,8 @@
     self = [super init];
     if (self) {
         _addressBook =ABAddressBookCreateWithOptions(NULL, nil);
+        _fieldsMask = MoContactFieldDefaults;
+        [self observeAddressBook];
     }
     
     return self;
@@ -51,12 +53,6 @@
 
 - (void)contacts:(void (^)(ABAuthorizationStatus, NSArray *))contactsBlock
 {
-    [self contactsIncludingOriginalProfilePicture:NO contactsBlock:contactsBlock];
-}
-
-- (void)contactsIncludingOriginalProfilePicture:(BOOL)shouldIncludeOriginalProfilePicture contactsBlock:(void (^)(ABAuthorizationStatus, NSArray *))contactsBlock
-{
-    
     ABAuthorizationStatus abAuthStatus = ABAddressBookGetAuthorizationStatus();
     
     switch (abAuthStatus) {
@@ -74,7 +70,7 @@
             ABAddressBookRequestAccessWithCompletion(_addressBook, ^(bool granted, CFErrorRef error) {
                 if (granted) {
                     
-                    [self loadContactsFromAddressBookIncludingOriginalProfilePicture:shouldIncludeOriginalProfilePicture withCompletionBlock:contactsBlock];
+                    [self loadContactsFromAddressBookWithCompletionBlock:contactsBlock];
                 }else if (contactsBlock){
                     contactsBlock(kABAuthorizationStatusDenied, nil);
                 }
@@ -84,7 +80,7 @@
         }
         case kABAuthorizationStatusAuthorized:
         {
-            [self loadContactsFromAddressBookIncludingOriginalProfilePicture:shouldIncludeOriginalProfilePicture withCompletionBlock:contactsBlock];
+            [self loadContactsFromAddressBookWithCompletionBlock:contactsBlock];
             break;
         }
     }
@@ -92,7 +88,7 @@
 
 #pragma mark - Internals -
 
-- (void)loadContactsFromAddressBookIncludingOriginalProfilePicture:(BOOL)shouldIncludeOriginalProfilePicture withCompletionBlock:(void(^)(ABAuthorizationStatus, NSArray *))contactsBlock
+- (void)loadContactsFromAddressBookWithCompletionBlock:(void(^)(ABAuthorizationStatus, NSArray *))contactsBlock
 {
     
     NSArray *contactsFromAB = (__bridge_transfer NSArray *)ABAddressBookCopyArrayOfAllPeople(_addressBook);
@@ -109,54 +105,101 @@
         
         [contact setContactId:contactId];
         
-        [contact setFirstName:[self objectFromProperty:kABPersonFirstNameProperty ofContact:contactRecord]];
-        [contact setFirstNamePhonetic:[self objectFromProperty:kABPersonFirstNamePhoneticProperty ofContact:contactRecord]];
+        if (_fieldsMask & MoContactFieldFirstName) {
+            [contact setFirstName:[self objectFromProperty:kABPersonFirstNameProperty ofContact:contactRecord]];
+        }
         
-        [contact setLastName:[self objectFromProperty:kABPersonLastNameProperty ofContact:contactRecord]];
-        [contact setLastNamePhonetic:[self objectFromProperty:kABPersonLastNamePhoneticProperty ofContact:contactRecord]];
+        if (_fieldsMask & MoContactFieldFirstNamePhonetic) {
+            [contact setFirstNamePhonetic:[self objectFromProperty:kABPersonFirstNamePhoneticProperty ofContact:contactRecord]];
+        }
         
-        [contact setMiddleName:[self objectFromProperty:kABPersonMiddleNameProperty ofContact:contactRecord]];
-        [contact setMiddleNamePhonetic:[self objectFromProperty:kABPersonMiddleNamePhoneticProperty ofContact:contactRecord]];
+        if (_fieldsMask & MoContactFieldLastName) {
+            [contact setLastName:[self objectFromProperty:kABPersonLastNameProperty ofContact:contactRecord]];
+        }
         
-        [contact setPrefix:[self objectFromProperty:kABPersonPrefixProperty ofContact:contactRecord]];
+        if (_fieldsMask & MoContactFieldLastNamePhonetic) {
+            [contact setLastNamePhonetic:[self objectFromProperty:kABPersonLastNamePhoneticProperty ofContact:contactRecord]];
+        }
         
-        [contact setSuffix:[self objectFromProperty:kABPersonSuffixProperty ofContact:contactRecord]];
+        if (_fieldsMask & MoContactFieldMiddleName) {
+            [contact setMiddleName:[self objectFromProperty:kABPersonMiddleNameProperty ofContact:contactRecord]];
+        }
+        
+        if (_fieldsMask & MoContactFieldMiddleNamePhonetic) {
+            [contact setMiddleNamePhonetic:[self objectFromProperty:kABPersonMiddleNamePhoneticProperty ofContact:contactRecord]];
+        }
+        
+        if (_fieldsMask & MoContactFieldPrefix) {
+            [contact setPrefix:[self objectFromProperty:kABPersonPrefixProperty ofContact:contactRecord]];
+        }
+        
+        if (_fieldsMask & MoContactFieldSuffixName) {
+            [contact setSuffix:[self objectFromProperty:kABPersonSuffixProperty ofContact:contactRecord]];
+        }
         
         [self setFullNameForContact:contact];
         
-        [contact setPhones:[self arrayFromProperty:kABPersonPhoneProperty ofContact:contactRecord]];
-        
-        [contact setEmails:[self arrayFromProperty:kABPersonEmailProperty ofContact:contactRecord]];
-        
-        [contact setNickName:[self objectFromProperty:kABPersonNicknameProperty ofContact:contactRecord]];
-        
-        [contact setCompany:[self objectFromProperty:kABPersonOrganizationProperty ofContact:contactRecord]];
-        
-        [contact setJobTitle:[self objectFromProperty:kABPersonJobTitleProperty ofContact:contactRecord]];
-        
-        [contact setDepartment:[self objectFromProperty:kABPersonDepartmentProperty ofContact:contactRecord]];
-        
-        [contact setBirthday:[self objectFromProperty:kABPersonBirthdayProperty ofContact:contactRecord]];
-        
-        NSData *thumImageData = (__bridge_transfer NSData*)ABPersonCopyImageDataWithFormat(contactRecord, kABPersonImageFormatThumbnail);
-        if (thumImageData) {
-            [contact setThumbnailProfilePicture:[UIImage imageWithData:thumImageData]];
+        if (_fieldsMask & MoContactFieldPhones) {
+            [contact setPhones:[self arrayFromProperty:kABPersonPhoneProperty ofContact:contactRecord]];
         }
         
-        if (shouldIncludeOriginalProfilePicture) {
+        if (_fieldsMask & MoContactFieldEmails) {
+            [contact setEmails:[self arrayFromProperty:kABPersonEmailProperty ofContact:contactRecord]];
+        }
+        
+        if (_fieldsMask & MoContactFieldNickName) {
+            [contact setNickName:[self objectFromProperty:kABPersonNicknameProperty ofContact:contactRecord]];
+        }
+        
+        if (_fieldsMask & MoContactFieldCompany) {
+            [contact setCompany:[self objectFromProperty:kABPersonOrganizationProperty ofContact:contactRecord]];
+        }
+        
+        if (_fieldsMask & MoContactFieldJobTitle) {
+            [contact setJobTitle:[self objectFromProperty:kABPersonJobTitleProperty ofContact:contactRecord]];
+        }
+        
+        if (_fieldsMask & MoContactFieldDepartment) {
+            [contact setDepartment:[self objectFromProperty:kABPersonDepartmentProperty ofContact:contactRecord]];
+        }
+        
+        if (_fieldsMask & MoContactFieldBirthday) {
+            [contact setBirthday:[self objectFromProperty:kABPersonBirthdayProperty ofContact:contactRecord]];
+        }
+        
+        if (_fieldsMask & MoContactFieldThumbnailProfilePicture) {
+            NSData *thumImageData = (__bridge_transfer NSData*)ABPersonCopyImageDataWithFormat(contactRecord, kABPersonImageFormatThumbnail);
+            if (thumImageData) {
+                [contact setThumbnailProfilePicture:[UIImage imageWithData:thumImageData]];
+            }
+        }
+        
+        if (_fieldsMask & MoContactFieldOriginalProfilePicture) {
             NSData *originalImageData = (__bridge_transfer NSData*)ABPersonCopyImageDataWithFormat(contactRecord, kABPersonImageFormatOriginalSize);
             if (originalImageData) {
                 [contact setOriginalProfilePicture:[UIImage imageWithData:originalImageData]];
             }
         }
         
-        [contact setNote:[self objectFromProperty:kABPersonNoteProperty ofContact:contactRecord]];
+        if (_fieldsMask & MoContactFieldNote) {
+            [contact setNote:[self objectFromProperty:kABPersonNoteProperty ofContact:contactRecord]];
+        }
         
-        [contact setCreatedAt:[self objectFromProperty:kABPersonCreationDateProperty ofContact:contactRecord]];
+        if (_fieldsMask & MoContactFieldCreatedAt) {
+            [contact setCreatedAt:[self objectFromProperty:kABPersonCreationDateProperty ofContact:contactRecord]];
+        }
         
-        [contact setUpdatedAt:[self objectFromProperty:kABPersonModificationDateProperty ofContact:contactRecord]];
+        if (_fieldsMask & MoContactFieldUpdatedAt) {
+            [contact setUpdatedAt:[self objectFromProperty:kABPersonModificationDateProperty ofContact:contactRecord]];
+        }
         
-        [contacts addObject:contact];
+        if (_delegate) {
+            if ([_delegate moABContatsManager:self shouldIncludeContact:contact]) {
+                [contacts addObject:contact];
+            }
+        }else {
+            [contacts addObject:contact];
+        }
         
     }
     
@@ -164,6 +207,28 @@
         contactsBlock(kABAuthorizationStatusAuthorized, contacts);
     }
     
+}
+
+- (void)addContact:(MoContact *)contact
+{
+    ABRecordRef person = [self abRecordRefFromContact:contact];
+    
+    ABAddressBookAddRecord(_addressBook, person, NULL);
+    ABAddressBookSave(_addressBook, NULL);
+    
+    CFRelease(person);
+}
+
+- (void)updateContact:(MoContact *)contact
+{
+    
+}
+
+- (BOOL)deleteContactWithId:(NSInteger)contactId
+{
+    ABRecordID contactRecordId = (ABRecordID)contactId;
+    ABRecordRef contactRef = ABAddressBookGetPersonWithRecordID(_addressBook, contactRecordId);
+    return ABAddressBookRemoveRecord(_addressBook, contactRef, NULL);
 }
 
 #pragma mark - Utils
@@ -196,6 +261,77 @@
     
 }
 
+- (ABRecordRef)abRecordRefFromContact:(MoContact *)contact
+{
+    ABRecordRef person = ABPersonCreate(); // create a person
+    
+    [self updateContactRecord:person withContact:contact];
+    
+    return person;
+}
+
+- (void)updateContactRecord:(ABRecordRef)contactRecord withContact:(MoContact *)contact
+{
+    ABRecordSetValue(contactRecord, kABPersonFirstNameProperty, (__bridge CFTypeRef)(contact.firstName), nil);
+    ABRecordSetValue(contactRecord, kABPersonFirstNamePhoneticProperty, (__bridge CFTypeRef)(contact.firstNamePhonetic), nil);
+    
+    ABRecordSetValue(contactRecord, kABPersonLastNameProperty, (__bridge CFTypeRef)(contact.lastName), nil);
+    ABRecordSetValue(contactRecord, kABPersonLastNamePhoneticProperty, (__bridge CFTypeRef)(contact.lastNamePhonetic), nil);
+    
+    ABRecordSetValue(contactRecord, kABPersonMiddleNameProperty, (__bridge CFTypeRef)(contact.middleName), nil);
+    ABRecordSetValue(contactRecord, kABPersonMiddleNamePhoneticProperty, (__bridge CFTypeRef)(contact.middleNamePhonetic), nil);
+    
+    ABRecordSetValue(contactRecord, kABPersonPrefixProperty, (__bridge CFTypeRef)(contact.prefix), nil);
+    
+    ABRecordSetValue(contactRecord, kABPersonSuffixProperty, (__bridge CFTypeRef)(contact.suffix), nil);
+    
+    ABRecordSetValue(contactRecord, kABPersonNicknameProperty, (__bridge CFTypeRef)(contact.nickName), nil);
+    
+    ABRecordSetValue(contactRecord, kABPersonOrganizationProperty, (__bridge CFTypeRef)(contact.company), nil);
+    
+    ABRecordSetValue(contactRecord, kABPersonJobTitleProperty, (__bridge CFTypeRef)(contact.jobTitle), nil);
+    
+    ABRecordSetValue(contactRecord, kABPersonDepartmentProperty, (__bridge CFTypeRef)(contact.department), nil);
+    
+    ABRecordSetValue(contactRecord, kABPersonBirthdayProperty, (__bridge CFTypeRef)(contact.birthday), nil);
+    
+    ABRecordSetValue(contactRecord, kABPersonNoteProperty, (__bridge CFTypeRef)(contact.note), nil);
+    
+    if (contact.phones && [contact.phones count] > 0) {
+        
+        ABMutableMultiValueRef phoneNumberMultiValue = ABMultiValueCreateMutable(kABPersonPhoneProperty);
+        for (NSDictionary *phoneData in contact.phones) {
+            
+            [phoneData enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+                ABMultiValueAddValueAndLabel(phoneNumberMultiValue, (__bridge CFTypeRef)(obj), (__bridge CFTypeRef)(key), NULL);
+            }];
+            
+        }
+        
+    }
+    
+    if (contact.emails && [contact.emails count] > 0) {
+        
+        ABMutableMultiValueRef emailsMultiValue = ABMultiValueCreateMutable(kABPersonPhoneProperty);
+        for (NSDictionary *emailData in contact.emails) {
+            
+            [emailData enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+                ABMultiValueAddValueAndLabel(emailsMultiValue, (__bridge CFTypeRef)(obj), (__bridge CFTypeRef)(key), NULL);
+            }];
+            
+        }
+        
+    }
+    
+    if (contact.thumbnailProfilePicture) {
+        NSData *data = UIImagePNGRepresentation(contact.thumbnailProfilePicture);
+        ABPersonSetImageData(contactRecord, (__bridge CFDataRef)data, NULL);
+    }else if(contact.originalProfilePicture) {
+        NSData *data = UIImagePNGRepresentation(contact.originalProfilePicture);
+        ABPersonSetImageData(contactRecord, (__bridge CFDataRef)data, NULL);
+    }
+}
+
 - (void)setFullNameForContact:(MoContact *)contact
 {
     NSArray *keys = @[@"prefix", @"firstName", @"middleName", @"lastName", @"suffix"];
@@ -212,5 +348,24 @@
     
     [contact setFullName:fullName];
 }
+
+#pragma mark - Address Book Observer
+
+- (void)observeAddressBook
+{
+    ABAddressBookRegisterExternalChangeCallback(_addressBook, addressBookExternalChange, (__bridge void *)(self));
+}
+
+#pragma mark - Address Book did change callback
+
+void addressBookExternalChange(ABAddressBookRef __unused addressBookRef, CFDictionaryRef __unused info, void *context)
+{
+    MoABContactsManager *manager = (__bridge MoABContactsManager *)(context);
+    if([manager.delegate respondsToSelector:@selector(addressBookDidChange)])
+    {
+        [manager.delegate addressBookDidChange];
+    }
+}
+
 
 @end

@@ -19,11 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     [[MoABContactsManager sharedManager] contacts:^(ABAuthorizationStatus authorizationStatus, NSArray *contacts) {
         
         if (authorizationStatus == kABAuthorizationStatusAuthorized) {
             
+            NSLog(@"Contact = %@", [contacts[0] asDictionary]);
         
         }else {
             NSLog(@"No permissions!");
