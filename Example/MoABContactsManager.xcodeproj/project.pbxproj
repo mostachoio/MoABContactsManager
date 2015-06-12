@@ -24,7 +24,7 @@
 		7F135E2EB6EFC144CCC62A0A /* Pods_MoABContactsManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38076891E5A88B53D84AD313 /* Pods_MoABContactsManager_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		F10E5BC81B28891B00AB8C12 /* MoContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F10E5BC71B28891B00AB8C12 /* MoContactCell.m */; };
-		F10E5BCB1B28892A00AB8C12 /* MoAddContact.m in Sources */ = {isa = PBXBuildFile; fileRef = F10E5BCA1B28892A00AB8C12 /* MoAddContact.m */; };
+		F16AEC261B2A66C000FA419C /* MoAddEditContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16AEC251B2A66C000FA419C /* MoAddEditContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +69,8 @@
 		EE635DA9C64551E3E51558AE /* Pods-MoABContactsManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoABContactsManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoABContactsManager_Tests/Pods-MoABContactsManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F10E5BC61B28891B00AB8C12 /* MoContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoContactCell.h; sourceTree = "<group>"; };
 		F10E5BC71B28891B00AB8C12 /* MoContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoContactCell.m; sourceTree = "<group>"; };
-		F10E5BC91B28892A00AB8C12 /* MoAddContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoAddContact.h; sourceTree = "<group>"; };
-		F10E5BCA1B28892A00AB8C12 /* MoAddContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoAddContact.m; sourceTree = "<group>"; };
+		F16AEC241B2A66C000FA419C /* MoAddEditContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoAddEditContactViewController.h; sourceTree = "<group>"; };
+		F16AEC251B2A66C000FA419C /* MoAddEditContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoAddEditContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +156,8 @@
 				6003F594195388D20070C39A /* Supporting Files */,
 				F10E5BC61B28891B00AB8C12 /* MoContactCell.h */,
 				F10E5BC71B28891B00AB8C12 /* MoContactCell.m */,
-				F10E5BC91B28892A00AB8C12 /* MoAddContact.h */,
-				F10E5BCA1B28892A00AB8C12 /* MoAddContact.m */,
+				F16AEC241B2A66C000FA419C /* MoAddEditContactViewController.h */,
+				F16AEC251B2A66C000FA419C /* MoAddEditContactViewController.m */,
 			);
 			name = "Example for MoABContactsManager";
 			path = MoABContactsManager;
@@ -402,7 +402,7 @@
 			files = (
 				6003F59E195388D20070C39A /* MoAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MoViewController.m in Sources */,
-				F10E5BCB1B28892A00AB8C12 /* MoAddContact.m in Sources */,
+				F16AEC261B2A66C000FA419C /* MoAddEditContactViewController.m in Sources */,
 				F10E5BC81B28891B00AB8C12 /* MoContactCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

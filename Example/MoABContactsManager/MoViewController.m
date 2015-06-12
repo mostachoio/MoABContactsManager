@@ -9,6 +9,7 @@
 #import "MoViewController.h"
 #import <MoABContactsManager/MoABContactsManager.h>
 #import "MoContactCell.h"
+#import "MoAddEditContactViewController.h"
 
 @interface MoViewController () <MoABContactsManagerDelegate, UITableViewDelegate, UITableViewDataSource>
 
@@ -19,6 +20,8 @@
 @property (nonatomic) BOOL onlyWithPhones;
 @property (nonatomic) BOOL onlyWithEmails;
 
+@property (strong, nonatomic) MoContact *selectedContact;
+
 @end
 
 @implementation MoViewController
@@ -28,14 +31,29 @@
     
     [[MoABContactsManager sharedManager] setFieldsMask:MoContactFieldFirstName | MoContactFieldLastName | MoContactFieldEmails | MoContactFieldPhones | MoContactFieldThumbnailProfilePicture];
     [[MoABContactsManager sharedManager] setDelegate:self];
-
-    [self loadContacts];
     
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self loadContacts];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"toEditContact"]) {
+        MoAddEditContactViewController *addEditContactVC  = segue.destinationViewController;
+        [addEditContactVC setContact:_selectedContact];
+    }
 }
 
 #pragma mark - Load Contacs
@@ -71,7 +89,7 @@
     return YES;
 }
 
-#pragma mark - UITableViewDelegate
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -109,6 +127,14 @@
     }
     
     return cell;
+}
+
+#pragma mark - UITableView Delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    _selectedContact = _contacts[indexPath.row];
+    [self performSegueWithIdentifier:@"toEditContact" sender:self];
 }
 
 #pragma mark - Actions

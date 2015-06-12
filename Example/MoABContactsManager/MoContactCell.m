@@ -10,4 +10,9 @@
 
 @implementation MoContactCell
 
+- (void)awakeFromNib
+{
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+}
+
 @end

@@ -315,7 +315,7 @@
             }];
             
         }
-        
+        ABRecordSetValue(contactRecord, kABPersonPhoneProperty, phoneNumberMultiValue, nil);
     }
     
     if (contact.emails && [contact.emails count] > 0) {
@@ -328,7 +328,7 @@
             }];
             
         }
-        
+        ABRecordSetValue(contactRecord, kABPersonEmailProperty, emailsMultiValue, nil);
     }
     
     if (contact.thumbnailProfilePicture) {
