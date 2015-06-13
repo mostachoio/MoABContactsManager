@@ -39,9 +39,7 @@ pod "MoABContactsManager"
 
 ```
 [[MoABContactsManager sharedManager] addContact:contact completion:^(NSError *error) {
-
     // Do sometihng
-
 }];
 ```
 
@@ -83,17 +81,17 @@ pod "MoABContactsManager"
     // Only show contacts with phones
     return [contact.phones count] > 0;
 }
-
-return YES;
-}
-
 ```
 
-### Select contacts fields
+### Select contacts fields to fetch
 
 ```
 [[MoABContactsManager sharedManager] setFieldsMask:MoContactFieldFirstName | MoContactFieldLastName | MoContactFieldEmails | MoContactFieldPhones | MoContactFieldThumbnailProfilePicture];
 ```
+
+## What's next?
+
+* Hanlde linked contacts
 
 ## Author
 
