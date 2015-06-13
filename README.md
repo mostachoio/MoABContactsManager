@@ -11,9 +11,13 @@
 MoABContactsManager is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+```ruby
+pod "MoABContactsManager"
+```
+
 ## Basic Usage
 
-# Get all contacts
+### Get all contacts
 ```
 [[MoABContactsManager sharedManager] contacts:^(ABAuthorizationStatus authorizationStatus, NSArray *contacts, NSError *error) {
 
@@ -31,7 +35,7 @@ it, simply add the following line to your Podfile:
 
 ```
 
-# Create contact
+### Create contact
 
 ```
 [[MoABContactsManager sharedManager] addContact:contact completion:^(NSError *error) {
@@ -41,7 +45,7 @@ it, simply add the following line to your Podfile:
 }];
 ```
 
-# Update contact
+### Update contact
 
 ```
 [[MoABContactsManager sharedManager] updateContact:contact completion:^(NSError *error) {
@@ -50,7 +54,7 @@ it, simply add the following line to your Podfile:
 
 ```
 
-# Delete contact
+### Delete contact
 
 ```
 [[MoABContactsManager sharedManager] deleteContactWithId:contact.contactId completion:^(NSError *error) {
@@ -61,13 +65,14 @@ it, simply add the following line to your Podfile:
 
 ## Advanced Usage
 
-# Use sort descriptor
+### Use sort descriptor
 
 ```
 [[MoABContactsManager sharedManager] setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"fullName" ascending:YES]]];
 ```
 
-# Filter contacts
+### Filter contacts
+
 ```
 // Set MoABContactsManager delegate
 [[MoABContactsManager sharedManager] setDelegate:self];
@@ -83,14 +88,11 @@ return YES;
 }
 
 ```
-# Select contacts fields
+
+### Select contacts fields
 
 ```
 [[MoABContactsManager sharedManager] setFieldsMask:MoContactFieldFirstName | MoContactFieldLastName | MoContactFieldEmails | MoContactFieldPhones | MoContactFieldThumbnailProfilePicture];
-```
-
-```ruby
-pod "MoABContactsManager"
 ```
 
 ## Author
