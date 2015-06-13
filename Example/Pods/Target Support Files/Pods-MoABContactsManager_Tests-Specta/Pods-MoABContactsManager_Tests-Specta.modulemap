@@ -1,6 +1,0 @@
-framework module Specta {
-  umbrella header "Pods-MoABContactsManager_Tests-Specta-umbrella.h"
-
-  export *
-  module * { export * }
-}

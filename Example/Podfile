@@ -8,6 +8,4 @@ end
 target 'MoABContactsManager_Tests', :exclusive => true do
   pod "MoABContactsManager", :path => "../"
 
-  pod 'Specta'
-  pod 'Expecta'
 end

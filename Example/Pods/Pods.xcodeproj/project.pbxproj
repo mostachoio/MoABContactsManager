@@ -7,921 +7,367 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00B14172D81E96AAC9371E24 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EFD6300589F293B23381DF /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		03B88FB80399EF21F3FD00C9 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA34934042ED731DC904017 /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		044159B5736D4932F60A0D1F /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D777BE0BE51F48D2D16F3 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		05B970D9C8D901FF502E472B /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 95D7E845C698B3D6A7572E69 /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08B4F37D8416AC06A62756DD /* Pods-MoABContactsManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF940CB814FC36B96F9838EC /* Pods-MoABContactsManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A5F1403FB78F6CF14478D6C /* Pods-MoABContactsManager_Tests-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FECF11472F61E18EAC0E31C /* Pods-MoABContactsManager_Tests-Specta-dummy.m */; };
-		0D456A2BFA01FBAB78E3B73B /* Pods-MoABContactsManager_Tests-Expecta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54D4B729802E05F799139666 /* Pods-MoABContactsManager_Tests-Expecta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0EF2259C45DFF197736CC7FC /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1C3A2130E628F14328B466 /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		103476F08DF8D2A1716F16CE /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B05C05E26E1BD004EC1E4B5 /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		119000D5EABAB7AF05E79631 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD424653773D0E7CB4FF14 /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		14B4FF9C2F28868BAE195CB9 /* MoABContactsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A478D5F48F6E20F7FE685A0B /* MoABContactsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1775B7B0A9811533E08DC574 /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = A1033585E717D5B317119F8B /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A80417ECF4640C83190D0DC /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = E38604DC571C485E76066221 /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EB85637FF67A3EC3F6290A4 /* Pods-MoABContactsManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688EC78B1727BE99F7C8501 /* Pods-MoABContactsManager_Tests-dummy.m */; };
-		21B8F924FF89FDA83B0CF1E3 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D529AD5134BC6512526B6E /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		21C02D3B861A88A9C7966674 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C1FCC3698B8CC6DB0B43DA /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		22F281DC5817DB73319500DC /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 945F46DE753001D6E1BD337D /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		244BCF74912FB06E14824880 /* MoContact.m in Sources */ = {isa = PBXBuildFile; fileRef = D322D568F0F92EE732F8B194 /* MoContact.m */; };
-		245B744E4F20CA0193DAD1AB /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 9546118C2D3933792EEC8AE7 /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25794B0E11CE5220E25A5F2F /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9C7BC992024EB8D33D0C6A /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2792A18E8313621B471A29F0 /* Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5225ACD5E189C74551D830B1 /* Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28AC5BC700E13B8AE2965897 /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D45519A4B27FE51AD05E91FB /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		290C1231295563A629E59235 /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E825ACE838B7C794675FA21 /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2D66C0AD5C15003C7F545F88 /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1B64D5D55BF936C1811B50 /* XCTestCase+Specta.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2D6E9D2CD12FBB058D77E4DB /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FDDA017C75115A851283E5 /* SPTSharedExampleGroups.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2EB1388E991FDAB13397C4D1 /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 1317125A3F3C1E03D3233496 /* SPTExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2EEC4B746F185253D697F4A3 /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D5D8844706BF7DB36B80A6 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		33880CE296749C5324958FA7 /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A7EAB52B8434E23A8003F2 /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		339A2C23479CBFEC6BF0894A /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D7CC1A789858D7DF7C73D4 /* SPTExampleGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		33B3A91A20055049A1C8C89E /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 800BE3E0A5F5457A5D858629 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		35A8B7EDC8E5F959D4345A7D /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 786F66D72A28E4799EF9BA0C /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37ED6ED4501C8C5F87F7C7EF /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F46E0DA63197CEEF691066 /* SPTGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A6679B5D05DB366253A5442 /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 94F5D1DAF5B9D2F9F72CE53A /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BF03D24972A5B448755DE80 /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = FD908ED3A6959E14FB4A1D20 /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F7493766850BEE2C5C51C5C /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 057D36955147D44EC8875AA8 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		40EB8C6E88870C3A1A5A1A70 /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D850F15B91CF15074A140381 /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45740C44B9C48AD2045E04F6 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = BC67A9A7F3A9FC8B5DFD4E13 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4598359F8D801C79CE7A061B /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = AC638323947A6E9CB0FEB778 /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46425F3F0A597C8027E77B6A /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 463B92D2074BF07D7ACE6DC0 /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4724E7CF6B69AF7C73CC60EA /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E8D79E0F6D2404AF3C4D7B /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CEF4FDB65938C9E402D0A87 /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B713408463F92A742581A /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		514A7D7875B72C981AAE8AD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A36F960A092C4CF62F846B /* Foundation.framework */; };
-		5741D6D2A5C0E8A8978AF487 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = E75BC5CEDD81A3B9C493EDD0 /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		580F443FAC01297C51F7945E /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8D73AB11C18C6CD449E229 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		58EC93843F9EA843A3991970 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = B40782E38929FD640A23E061 /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		59E91591A1ED6BC74AAADEBA /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D1BA26F8AA62769A1DD463 /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5D70390EB31E528C482DFA02 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = EACDD6B91D2FFE13863BA4A1 /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FFB82A2AA85518D7EB9F072 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = BE62ADA3F19B7DE7C65EA87C /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		622FDC8287ABE3CD55BBF8F9 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBD48539542D5553AB3F11E /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62A12DD8962C1FA4236FAD29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A36F960A092C4CF62F846B /* Foundation.framework */; };
-		634902D27F62898EDFABA47B /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FF9D038B8C78CB2785610D8 /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66E126AA2F9D82DEA0D4F38E /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 54B752857536DE835E9384AB /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		671473353CBA00FF3F422ACD /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 76B8C7E5415A7375855B89F0 /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		671564CE3A922560368E15B6 /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = C4053BEBC781CABF7605A04C /* SPTExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68343D2BC8D382ACEE5A0A6D /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0563464E9EBFF9A828BC064C /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		688648D8E993583277CE91F3 /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E222C40E6EE6313606E3FC /* SPTCompiledExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69B75B3259E44FDE9B1818E6 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B79A330808953ACA02735B9 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6AF79258844815E2DB103ED4 /* MoABContactsManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3BCD4531E4C50166F9027C6 /* MoABContactsManager.bundle */; };
-		6C87B9A99AD4F8EAFAD2536D /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5068F0EB4BE436BF422CA1B3 /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6D5093EAC70E8C133E384013 /* MoContactSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3717B9718AEF3DBD0AF9D1AC /* MoContactSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FB5EA0D67C2671E1D3EC068 /* MoABContactsManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9FA362A8AADE9D407B0B08B /* MoABContactsManager.bundle */; };
-		7489C4BEA9D91FD5A42B35DC /* Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB17C2249190D00452D78BA /* Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74B4F5301F7DC33D30EA79BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A36F960A092C4CF62F846B /* Foundation.framework */; };
-		74E1BED2775376599D8DE503 /* Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8AC0E7387987D309DFB961 /* Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m */; };
-		75DFFAE190BAD6933F6D8526 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = D7CA5E32EEC9BC3EC4ED5A86 /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7893C317812224CB4AF9A269 /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 538A819A62601D773BD91BA7 /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78C93679F2ADFD1ACA6A71C7 /* MoContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E49363E518BE52BA48D63C /* MoContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78FFBBD22D52303BC34E017C /* MoABContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD590F4558C7AD15B95C298 /* MoABContactsManager.m */; };
-		7A8D42A579B8B35B9EAC92B1 /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 287E5A87E2BADF75569395BE /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		825298E88D0A9489A1A697C1 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = C96E2DD86BBA20B4227742BC /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82707A0C8984BE9F35A5F353 /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3646571381A6AA8D8BD003BD /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		845BD3BB638B07DC3DAFA57F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A36F960A092C4CF62F846B /* Foundation.framework */; };
-		847027AC00B436040C6F9CB3 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = 05BB5566380BE1DB6D070E2B /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86F076337D8D6F9F79C2BD66 /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D133D4918E91FFEEEC910F /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8974B8CB83C1D0143B06ECBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A36F960A092C4CF62F846B /* Foundation.framework */; };
-		8B916037F7C5801A20B13B9E /* Pods-MoABContactsManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC094D4CA226F1F82F36CBB /* Pods-MoABContactsManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DDCAA1217154569ABAE2E6F /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E675A046BD630B065DE98E6 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E41C099627464A35D0E954A /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 112BCD949739D50C868F06F8 /* XCTestCase+Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90457AA48EDF7053BBFCC59F /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2271BA78DA5FD16C6B027F76 /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		924034F99C513516C87588B7 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E406D920BFE9542975597 /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		933D642B6480E3C651A81667 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = DCE5CBAC96BA3908938C60EC /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93E6DE7F33D169498B870368 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = FF010E32EF141BF529C70C77 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9566875ED904D4CFEDE06830 /* MoContactSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3717B9718AEF3DBD0AF9D1AC /* MoContactSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98BF95F922790E2E6C1A4C3C /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D6EFD1D7604F67E73C493A /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98E84EE80B1DD140C89A6BBE /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF2793559628F3298DC5D59 /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9AE21F680AE7299C7CE82C2E /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = FA14EA37FE7E0B9748C2CE6D /* SpectaUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CA0C9425B50FF2E810E89EF /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6F91C61CBC1407E4A122ED /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9E7474885C0CD19F5BD23DAB /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 5083FA4E8AB6BD5808A75742 /* SPTCompiledExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9F04AF0D604AE35D68919235 /* MoContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E49363E518BE52BA48D63C /* MoContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FC847FF632CD7FF050E5819 /* MoContactSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C04E2D45D448792B8ABE5C5 /* MoContactSerializer.m */; };
-		A08BDD396CF1A1642EC94D94 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFAB7AD1FDAD8ECE30A6138 /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A0C9C9EFC709A52D984FC557 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = E23E3AB11DDC0CFB94F1F062 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1822161BE69DC3F159610F8 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2013826CA46EE3B56210C7 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1C4ECF1451E6ADDB3033633 /* Pods-MoABContactsManager_Tests-Specta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDD6E0226B929D46645ED5A /* Pods-MoABContactsManager_Tests-Specta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACB12234DE72D2239A6ACB4A /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = E68C53A89EF99DB01450E1BB /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		AFFC20D77A1BF2ACC6787C95 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E9B495F070BE528138E937 /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B299CB01799B1F0879F9F191 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = BDC064EDD0497918EA7E66D1 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B44142937ED7203455208246 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2B7491E2A19FBC1CF0ED08 /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B600C0AD4F51B9526CE61333 /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 29EAC908BF16260CD2782F3F /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B679BEB0724071CEFE3C23BA /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 06678CC31F55E2B0A9D73823 /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B73C26FBE6FD300F379AF6BB /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0303AA0ADAC34D4DC381B2 /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAC92ABC7995580AFF3A46FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94535AEFA9432CBEEBBB85D /* XCTest.framework */; };
-		BAE98B7671C39CB956A5DAD5 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 40D991C69EE643C436C482AB /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBDDC5A9978FA51A38251A43 /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 145A23BC5AE966EC025F20C1 /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BDB3401392C3C07088478371 /* Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED889C0A8DC3ABA3B2625A6F /* Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m */; };
-		C2813A145F62702B45E76B92 /* MoContact.m in Sources */ = {isa = PBXBuildFile; fileRef = D322D568F0F92EE732F8B194 /* MoContact.m */; };
-		C476A7F2BC70C9CE7A8C32E1 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D6B5D721DF37C6BE814E89 /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C47B0FDAC69E1F0F199BF8DA /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 047F7D27B373D9959F12CF27 /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5C66B5E7AB0A178881F49CD /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6B2BA959C0F41985A171AD /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C65034D5E75B6F3618A34519 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A36F960A092C4CF62F846B /* Foundation.framework */; };
-		C6F474E8A897B42C4107DFDC /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7DA226196A471E7E512180 /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9DC761584B1F6DB293449EE /* MoABContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD590F4558C7AD15B95C298 /* MoABContactsManager.m */; };
-		CB7B0CABDD847ECCAC9033D0 /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D85F7FE8066761DC788D82 /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD88331CF418B1F2314665C5 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = F53C1182F46F8E353DE3FC5F /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0B3F4810E640A9DAC2AA329 /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7673435D8F3AA52DBAEBDD38 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D53CDA77507B8058849FCD30 /* MoContactSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C04E2D45D448792B8ABE5C5 /* MoContactSerializer.m */; };
-		D719001F1C8ED5AA623D0C37 /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD78B6E334DDBA44074C134 /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DBDDC37F9CB5C9C1FE971568 /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7A302DBEFF1FCA491B7597 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DCF3153E139CBFF975650DD2 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 429EC44D9F5E1EB0F69001AE /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD026EFEC5EED1E8F04F42E6 /* MoABContactsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A478D5F48F6E20F7FE685A0B /* MoABContactsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E650CF2C774B03AE37ECE527 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE73976C47A9AB4C851831 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E86959834600E3B3E53A3359 /* Pods-MoABContactsManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E0300C381B6DBE4FC0971A /* Pods-MoABContactsManager_Example-dummy.m */; };
-		EE69D5E9B51932541B22DEDA /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 903F5B26CFBAB2F24C542198 /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF96207AEB2D51B699671CBD /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE29A15CBB7CA2A56DD7107 /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFE232624ADB9A284F93606B /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0BA7385722A32F50651BAA /* SPTTestSuite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F0CC8156CB6CF215B39AFD01 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = B3C31CD4297CF0883C36CEE6 /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F53978B963B43EE20F267E82 /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 54064582F763D856ADE10599 /* SPTCallSite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FA84A956AFE3058C43917F31 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D6E31B1C5C65DD5E9CEF6B /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FDDB170FF4D69B1DDDBF06F7 /* Pods-MoABContactsManager_Tests-Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB10A5E8D11FFCEA337DB019 /* Pods-MoABContactsManager_Tests-Expecta-dummy.m */; };
-		FF07AD9A727FECE91A7BA7AB /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C42EFFEA8DF07BE17941C60 /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FF3D2CF342FD722330A77005 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94535AEFA9432CBEEBBB85D /* XCTest.framework */; };
-		FFCCDAAC49D90A9A9359DBA9 /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB45DB47656C9764F4F90F7 /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		01B859C0AA0248A1D9F6D7CC /* Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7EF4AB9E927073C1F8CE2 /* Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m */; };
+		02F97007EAA0E394E2A6641E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C88A5490F7A7927F68CA8AD /* Foundation.framework */; };
+		179C7C8867F175811D71610D /* Pods-MoABContactsManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CACA2B100C33699937C0BA /* Pods-MoABContactsManager_Tests-dummy.m */; };
+		2C0E3D61EB751BB111E10C05 /* MoContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D830C973453AF1C92F37C4F /* MoContact.m */; };
+		2C51D03964553777C202B0AF /* MoABContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D83C3029055871F2826A6859 /* MoABContactsManager.m */; };
+		36CC19C8968AD6256AF686DB /* MoContactSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = E85FBA6635A096F8A4A78461 /* MoContactSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B22ED1492944D2BD639255A /* MoContact.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA6FB1DC51DECFA372685F4 /* MoContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495DE2D829BC83E376C37FFC /* MoABContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D83C3029055871F2826A6859 /* MoABContactsManager.m */; };
+		5874A7C60B139F209D4518D5 /* MoContactSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = E85FBA6635A096F8A4A78461 /* MoContactSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69459C2B694478B4B1118EF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C88A5490F7A7927F68CA8AD /* Foundation.framework */; };
+		73F948C69C7C200E62F1ADB8 /* Pods-MoABContactsManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE821F09BE8DA9A81684B7CB /* Pods-MoABContactsManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A05E11112912BB6AD7502A2 /* Pods-MoABContactsManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 654DF5FC61E624FB8ACC8419 /* Pods-MoABContactsManager_Example-dummy.m */; };
+		814A95BCDB80DF1D9E32AF6E /* Pods-MoABContactsManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF156FCD29863AAD230A54D3 /* Pods-MoABContactsManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85A4915B6B4CD25A265BF00D /* MoContactSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8283CCD14AEE37E7455352E6 /* MoContactSerializer.m */; };
+		A320CDADE514A3C48B0226F6 /* Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 165D7C867373F2913955DA22 /* Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A99AC18EAEEE4165FEDB90FF /* MoABContactsManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F395A5F394FDADD8659B8CE /* MoABContactsManager.bundle */; };
+		AF22A69C6E5BC3FF3AEC7197 /* MoContactSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8283CCD14AEE37E7455352E6 /* MoContactSerializer.m */; };
+		B94116F038F4426F3E733818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C88A5490F7A7927F68CA8AD /* Foundation.framework */; };
+		BEA79A3C3FDC0ADAFD536182 /* MoContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D830C973453AF1C92F37C4F /* MoContact.m */; };
+		BED59BD2BCBE59A35123C476 /* MoABContactsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1F8C774DC676BDF6DCC11E /* MoABContactsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEF7DB0A440A00BC30448755 /* Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5054925949192C05E7487A0 /* Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C29C7711D91368B9006BD34B /* Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31877B9C6A943D0A40D34DF8 /* Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m */; };
+		C7D5DC3319D7C78DC808EDDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C88A5490F7A7927F68CA8AD /* Foundation.framework */; };
+		D590FC7C15A1B7F946456115 /* MoContact.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA6FB1DC51DECFA372685F4 /* MoContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDED3F7AA3929715E68ED85C /* MoABContactsManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68A7BD1D4418B7AE4914142A /* MoABContactsManager.bundle */; };
+		DFF17F18628F601FB40DFA07 /* MoABContactsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1F8C774DC676BDF6DCC11E /* MoABContactsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D32C574DD4706559435858B /* PBXContainerItemProxy */ = {
+		2FF81BDF4D682373965A02C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 91063247B797E7CDDE87BDEB /* Project object */;
+			containerPortal = 1250245EA42690AD478DDE7E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 767102DAF3B217F968681F09;
-			remoteInfo = "Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager";
+			remoteGlobalIDString = 8B001D9DBA3C765270884FB9;
+			remoteInfo = "Pods-MoABContactsManager_Tests-MoABContactsManager";
 		};
-		48B468CFBD85C2F108F4F874 /* PBXContainerItemProxy */ = {
+		3395494BB80A75A2EDC78369 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 91063247B797E7CDDE87BDEB /* Project object */;
+			containerPortal = 1250245EA42690AD478DDE7E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C10B7BFEBCE37031815A21E0;
-			remoteInfo = "Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager";
-		};
-		70C2780FBCCF85323AD2E00E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91063247B797E7CDDE87BDEB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2AD91BFAB33C5CB4083560C9;
+			remoteGlobalIDString = B1D4616CC63D95E3E759F004;
 			remoteInfo = "Pods-MoABContactsManager_Example-MoABContactsManager";
 		};
-		B93E24D14F5E64CC1E93847E /* PBXContainerItemProxy */ = {
+		4E07F5A8489AB31D56E55E1B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 91063247B797E7CDDE87BDEB /* Project object */;
+			containerPortal = 1250245EA42690AD478DDE7E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 946AFA4D4DF26C293CBDF066;
-			remoteInfo = "Pods-MoABContactsManager_Tests-Expecta";
+			remoteGlobalIDString = 3DB77DB67048C8A12BB6C2B8;
+			remoteInfo = "Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager";
 		};
-		D4A99649716627DF0527CBE4 /* PBXContainerItemProxy */ = {
+		BCC3B016CAFC519244449446 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 91063247B797E7CDDE87BDEB /* Project object */;
+			containerPortal = 1250245EA42690AD478DDE7E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E8FF3601204885C923556F5;
-			remoteInfo = "Pods-MoABContactsManager_Tests-Specta";
-		};
-		E33A503B9F7E3615B586625F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91063247B797E7CDDE87BDEB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 944512E6AE716697EEB88B8C;
-			remoteInfo = "Pods-MoABContactsManager_Tests-MoABContactsManager";
+			remoteGlobalIDString = 0B70AC65D6F73F8AE83B967D;
+			remoteInfo = "Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03E49363E518BE52BA48D63C /* MoContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoContact.h; sourceTree = "<group>"; };
-		0456738E433A14E0CF011470 /* Pods-MoABContactsManager_Tests-Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MoABContactsManager_Tests-Specta.modulemap"; sourceTree = "<group>"; };
-		047F7D27B373D9959F12CF27 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
-		048E7467696B882FC6A2335C /* Pods_MoABContactsManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoABContactsManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0563464E9EBFF9A828BC064C /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
-		057D36955147D44EC8875AA8 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
-		05BB5566380BE1DB6D070E2B /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
-		06678CC31F55E2B0A9D73823 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
-		06E0300C381B6DBE4FC0971A /* Pods-MoABContactsManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoABContactsManager_Example-dummy.m"; sourceTree = "<group>"; };
-		07241B248B01DB303C1E146E /* Pods-MoABContactsManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0AD590F4558C7AD15B95C298 /* MoABContactsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoABContactsManager.m; sourceTree = "<group>"; };
-		0E675A046BD630B065DE98E6 /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
-		0FECF11472F61E18EAC0E31C /* Pods-MoABContactsManager_Tests-Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoABContactsManager_Tests-Specta-dummy.m"; sourceTree = "<group>"; };
-		112BCD949739D50C868F06F8 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
-		1317125A3F3C1E03D3233496 /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
-		145A23BC5AE966EC025F20C1 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
-		1786EA881BD1A17279A13BA2 /* Pods-MoABContactsManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		19FDDA017C75115A851283E5 /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
-		1B05C05E26E1BD004EC1E4B5 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
-		1C3081CD219040790DA9B1E6 /* Pods-MoABContactsManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoABContactsManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1CC361077631B6638A5B0569 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Info.plist"; sourceTree = "<group>"; };
-		1D3507EF734FA538ACA81034 /* Pods-MoABContactsManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2271BA78DA5FD16C6B027F76 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
-		287E5A87E2BADF75569395BE /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
-		29EAC908BF16260CD2782F3F /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
-		2B3BAC4F96204467F9113101 /* Pods-MoABContactsManager_Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
-		2C4B713408463F92A742581A /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
-		2C8AC0E7387987D309DFB961 /* Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m"; sourceTree = "<group>"; };
-		31A36F960A092C4CF62F846B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3646571381A6AA8D8BD003BD /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
-		37169DEF0FA53883CA2918E4 /* MoABContactsManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoABContactsManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3717B9718AEF3DBD0AF9D1AC /* MoContactSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoContactSerializer.h; sourceTree = "<group>"; };
-		3B22C2097B9E7F84B933D0DA /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig"; sourceTree = "<group>"; };
-		3D02AFC50D0CD86B878B0064 /* Pods-MoABContactsManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3E825ACE838B7C794675FA21 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
-		3EFAB7AD1FDAD8ECE30A6138 /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
-		3F5446620EEAFD3AAC2EA105 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FDD6E0226B929D46645ED5A /* Pods-MoABContactsManager_Tests-Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Tests-Specta-umbrella.h"; sourceTree = "<group>"; };
-		3FF9D038B8C78CB2785610D8 /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
-		40D991C69EE643C436C482AB /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
-		429EC44D9F5E1EB0F69001AE /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
-		42A7EAB52B8434E23A8003F2 /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
-		4355DCD7513EE1421EDDD5DE /* Pods-MoABContactsManager_Example-MoABContactsManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Example-MoABContactsManager-prefix.pch"; sourceTree = "<group>"; };
-		463B92D2074BF07D7ACE6DC0 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
-		491789EDA6908C6F70B5F399 /* Pods-MoABContactsManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoABContactsManager_Tests-resources.sh"; sourceTree = "<group>"; };
-		4A1B64D5D55BF936C1811B50 /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
-		4C42EFFEA8DF07BE17941C60 /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
-		4C4790102E0D20E6A20859DF /* Pods-MoABContactsManager_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Tests-environment.h"; sourceTree = "<group>"; };
-		5068F0EB4BE436BF422CA1B3 /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
-		5083FA4E8AB6BD5808A75742 /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
-		5225ACD5E189C74551D830B1 /* Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h"; sourceTree = "<group>"; };
-		538A819A62601D773BD91BA7 /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
-		54064582F763D856ADE10599 /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
-		54B752857536DE835E9384AB /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
-		54D4B729802E05F799139666 /* Pods-MoABContactsManager_Tests-Expecta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Tests-Expecta-umbrella.h"; sourceTree = "<group>"; };
-		54EE73976C47A9AB4C851831 /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
-		5AE29A15CBB7CA2A56DD7107 /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
-		5B79A330808953ACA02735B9 /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
-		5F9ACFBC72BB228BF45F9CE5 /* Pods-MoABContactsManager_Tests-Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MoABContactsManager_Tests-Expecta.modulemap"; sourceTree = "<group>"; };
-		62E9B495F070BE528138E937 /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
-		635A67FE6D414B8CA19273C8 /* Pods-MoABContactsManager_Tests-Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Tests-Expecta.xcconfig"; sourceTree = "<group>"; };
-		72D5D8844706BF7DB36B80A6 /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
-		75D133D4918E91FFEEEC910F /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
-		7673435D8F3AA52DBAEBDD38 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
-		76B8C7E5415A7375855B89F0 /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
-		76D6B5D721DF37C6BE814E89 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
-		77651EA6B766E2C74DA0D95D /* Pods-MoABContactsManager_Tests-MoABContactsManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoABContactsManager_Tests-MoABContactsManager.xcconfig"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager.xcconfig"; sourceTree = "<group>"; };
-		786F66D72A28E4799EF9BA0C /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
-		79D6EFD1D7604F67E73C493A /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
-		7C04E2D45D448792B8ABE5C5 /* MoContactSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoContactSerializer.m; sourceTree = "<group>"; };
-		7C3F86CFF528A86F3F831C08 /* Pods-MoABContactsManager_Tests-Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Tests-Specta.xcconfig"; sourceTree = "<group>"; };
-		7D4E62C92DD3727E1AE29B2D /* Pods-MoABContactsManager_Tests-Specta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Tests-Specta-Private.xcconfig"; sourceTree = "<group>"; };
-		800BE3E0A5F5457A5D858629 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
-		86FDD8DF858CAC4AF2628A21 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AB45DB47656C9764F4F90F7 /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
-		8B9D777BE0BE51F48D2D16F3 /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
-		8E0303AA0ADAC34D4DC381B2 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
-		8E1B43CB1E1F1C052DDF8CD8 /* Pods-MoABContactsManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoABContactsManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		903F5B26CFBAB2F24C542198 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
-		90D529AD5134BC6512526B6E /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
-		945F46DE753001D6E1BD337D /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
-		94F5D1DAF5B9D2F9F72CE53A /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
-		9546118C2D3933792EEC8AE7 /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
-		95D7E845C698B3D6A7572E69 /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
-		9688EC78B1727BE99F7C8501 /* Pods-MoABContactsManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoABContactsManager_Tests-dummy.m"; sourceTree = "<group>"; };
-		98C1FCC3698B8CC6DB0B43DA /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
-		9A0C7127D88A220F3D65A297 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A98B103D09C948BEF5400E3 /* MoABContactsManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoABContactsManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AD78B6E334DDBA44074C134 /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
-		9B7F1DE6E710002348FE564F /* Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap"; sourceTree = "<group>"; };
-		9CFD424653773D0E7CB4FF14 /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
-		9D7A302DBEFF1FCA491B7597 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
-		9E027750D013C5C60A6FF275 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E6B2BA959C0F41985A171AD /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
-		9E8D73AB11C18C6CD449E229 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
-		9F2013826CA46EE3B56210C7 /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
-		A1033585E717D5B317119F8B /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
-		A2D6E31B1C5C65DD5E9CEF6B /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
-		A3BCD4531E4C50166F9027C6 /* MoABContactsManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoABContactsManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		A43E406D920BFE9542975597 /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
-		A45C1F328D5073F601F8A1EA /* Pods-MoABContactsManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoABContactsManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A478D5F48F6E20F7FE685A0B /* MoABContactsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoABContactsManager.h; sourceTree = "<group>"; };
-		A7EFD6300589F293B23381DF /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
-		AA5FDCCB971E7C61C4544EAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC638323947A6E9CB0FEB778 /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
-		AD6E61C75DB407666CD1CD2D /* Pods-MoABContactsManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoABContactsManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B3C31CD4297CF0883C36CEE6 /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
-		B40782E38929FD640A23E061 /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
-		B8378CC6A85CC824E6CDD316 /* Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch"; sourceTree = "<group>"; };
-		BA9C7BC992024EB8D33D0C6A /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
-		BC67A9A7F3A9FC8B5DFD4E13 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
-		BCE920B2B0B74F2BE88A5C60 /* Pods-MoABContactsManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoABContactsManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BDC064EDD0497918EA7E66D1 /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
-		BE62ADA3F19B7DE7C65EA87C /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
-		C07B954FDBC9EEADA5DB6522 /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4053BEBC781CABF7605A04C /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
-		C6E222C40E6EE6313606E3FC /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
-		C6F46E0DA63197CEEF691066 /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
-		C8D7CC1A789858D7DF7C73D4 /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
-		C96E2DD86BBA20B4227742BC /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
-		C98586AA5256AC9F8D26BC9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB10A5E8D11FFCEA337DB019 /* Pods-MoABContactsManager_Tests-Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoABContactsManager_Tests-Expecta-dummy.m"; sourceTree = "<group>"; };
-		CCACCAC2BECDB290916898F1 /* Pods-MoABContactsManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MoABContactsManager_Tests.modulemap"; sourceTree = "<group>"; };
-		CD8EDE82FD28E2279566EE93 /* Pods-MoABContactsManager_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Example-environment.h"; sourceTree = "<group>"; };
-		CDBD48539542D5553AB3F11E /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
-		CE2B7491E2A19FBC1CF0ED08 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
-		CE7DA226196A471E7E512180 /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
-		CF940CB814FC36B96F9838EC /* Pods-MoABContactsManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Example-umbrella.h"; sourceTree = "<group>"; };
-		CFB9BA76F48343EEB08B1335 /* Pods-MoABContactsManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MoABContactsManager_Example.modulemap"; sourceTree = "<group>"; };
-		D0D244E5B646B73CEDBCB396 /* Pods-MoABContactsManager_Tests-Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Tests-Specta-prefix.pch"; sourceTree = "<group>"; };
-		D322D568F0F92EE732F8B194 /* MoContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoContact.m; sourceTree = "<group>"; };
-		D45519A4B27FE51AD05E91FB /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
-		D5D85F7FE8066761DC788D82 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
-		D7CA5E32EEC9BC3EC4ED5A86 /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
-		D850F15B91CF15074A140381 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
-		D9FA362A8AADE9D407B0B08B /* MoABContactsManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoABContactsManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA1C3A2130E628F14328B466 /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
-		DB7EBFDD8F335AEC2A0EABED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCE5CBAC96BA3908938C60EC /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
-		DD0BA7385722A32F50651BAA /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
-		DDF2793559628F3298DC5D59 /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
-		E23E3AB11DDC0CFB94F1F062 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
-		E2D1BA26F8AA62769A1DD463 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
-		E38604DC571C485E76066221 /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
-		E68C53A89EF99DB01450E1BB /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
-		E75BC5CEDD81A3B9C493EDD0 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
-		E8B87A05D8924E5AD15E3016 /* Pods-MoABContactsManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoABContactsManager_Example-resources.sh"; sourceTree = "<group>"; };
-		E94535AEFA9432CBEEBBB85D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EACDD6B91D2FFE13863BA4A1 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
-		ECB17C2249190D00452D78BA /* Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h"; sourceTree = "<group>"; };
-		ED889C0A8DC3ABA3B2625A6F /* Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m"; sourceTree = "<group>"; };
-		EF001DF559B5AAB8F11A004F /* Pods-MoABContactsManager_Tests-Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Tests-Expecta-prefix.pch"; sourceTree = "<group>"; };
-		EF2D1D24EFACE53F80E16465 /* Pods_MoABContactsManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoABContactsManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F19B204F00FD2D26A3E500C1 /* Pods-MoABContactsManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoABContactsManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F4E8D79E0F6D2404AF3C4D7B /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
-		F53C1182F46F8E353DE3FC5F /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
-		F69A3A2C51BFAA9FD75B20BB /* Pods-MoABContactsManager_Example-MoABContactsManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Example-MoABContactsManager.xcconfig"; sourceTree = "<group>"; };
-		F862DE47F85DE1EA8782F8F6 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig"; sourceTree = "<group>"; };
-		FA14EA37FE7E0B9748C2CE6D /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
-		FA6F91C61CBC1407E4A122ED /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
-		FAA34934042ED731DC904017 /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
-		FD908ED3A6959E14FB4A1D20 /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
-		FDC094D4CA226F1F82F36CBB /* Pods-MoABContactsManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Tests-umbrella.h"; sourceTree = "<group>"; };
-		FF010E32EF141BF529C70C77 /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
-		FFE0C5EF3B0BFC2C22D1E298 /* Pods-MoABContactsManager_Example-MoABContactsManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MoABContactsManager_Example-MoABContactsManager.modulemap"; sourceTree = "<group>"; };
+		06010B2494C7ECE42BA575CF /* Pods-MoABContactsManager_Example-MoABContactsManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Example-MoABContactsManager.xcconfig"; sourceTree = "<group>"; };
+		0DDD18F55D495F7C8260EF3B /* Pods-MoABContactsManager_Tests-MoABContactsManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoABContactsManager_Tests-MoABContactsManager.xcconfig"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager.xcconfig"; sourceTree = "<group>"; };
+		1259383C7BCF0A4DAE7A7FE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		165D7C867373F2913955DA22 /* Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h"; sourceTree = "<group>"; };
+		28FA200964F7C500C77E9CDD /* Pods-MoABContactsManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MoABContactsManager_Example.modulemap"; sourceTree = "<group>"; };
+		31877B9C6A943D0A40D34DF8 /* Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m"; sourceTree = "<group>"; };
+		4868E70512BDD5091EA9A504 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig"; sourceTree = "<group>"; };
+		4AD7EF4AB9E927073C1F8CE2 /* Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m"; sourceTree = "<group>"; };
+		4D830C973453AF1C92F37C4F /* MoContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoContact.m; sourceTree = "<group>"; };
+		5830535F9021CC0A0C002253 /* Pods-MoABContactsManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6347380EDF0566C68A561CC8 /* Pods-MoABContactsManager_Example-MoABContactsManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MoABContactsManager_Example-MoABContactsManager.modulemap"; sourceTree = "<group>"; };
+		654DF5FC61E624FB8ACC8419 /* Pods-MoABContactsManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoABContactsManager_Example-dummy.m"; sourceTree = "<group>"; };
+		68A7BD1D4418B7AE4914142A /* MoABContactsManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoABContactsManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F395A5F394FDADD8659B8CE /* MoABContactsManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoABContactsManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7556D438BD16979236AECD27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8283CCD14AEE37E7455352E6 /* MoContactSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoContactSerializer.m; sourceTree = "<group>"; };
+		86BA13938E5F460BB0DE0DBB /* Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap"; sourceTree = "<group>"; };
+		88D78F79651353B64213B032 /* MoABContactsManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoABContactsManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C88A5490F7A7927F68CA8AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8E7BE00BBA61E19A43682613 /* Pods-MoABContactsManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MoABContactsManager_Tests.modulemap"; sourceTree = "<group>"; };
+		8FF2EBEE0069A5A9CEEB5191 /* Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch"; sourceTree = "<group>"; };
+		932AE264B663CD95D08E79E1 /* Pods-MoABContactsManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoABContactsManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		94CACA2B100C33699937C0BA /* Pods-MoABContactsManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoABContactsManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		95B8A9F6F7E1EDBA4E0FC45C /* Pods-MoABContactsManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoABContactsManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		960A1E7FFD8771F44A0C2F29 /* Pods-MoABContactsManager_Example-MoABContactsManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Example-MoABContactsManager-prefix.pch"; sourceTree = "<group>"; };
+		A1DEFF97717F20388BA6312C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A438684CA8673C3C38A872C7 /* Pods-MoABContactsManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoABContactsManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		A757AC15A0B4C7DC54FF90A5 /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig"; sourceTree = "<group>"; };
+		AA1F8C774DC676BDF6DCC11E /* MoABContactsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoABContactsManager.h; sourceTree = "<group>"; };
+		AF156FCD29863AAD230A54D3 /* Pods-MoABContactsManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B49D9735BF525B396415CEFE /* Pods-MoABContactsManager_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Tests-environment.h"; sourceTree = "<group>"; };
+		B869967A37DBABF4F36B9364 /* Pods-MoABContactsManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoABContactsManager_Example-resources.sh"; sourceTree = "<group>"; };
+		BACBF6A71F24768C70E75D7E /* Pods_MoABContactsManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoABContactsManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3569EBE0627C09BE035F9E1 /* Pods-MoABContactsManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoABContactsManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C9DF1936EC170C1D9159BBC6 /* Pods_MoABContactsManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoABContactsManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE821F09BE8DA9A81684B7CB /* Pods-MoABContactsManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		D402D9C1DFE81AFD06A15BA4 /* MoABContactsManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MoABContactsManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5054925949192C05E7487A0 /* Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h"; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h"; sourceTree = "<group>"; };
+		D83C3029055871F2826A6859 /* MoABContactsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoABContactsManager.m; sourceTree = "<group>"; };
+		D88CD98969A2D499C09CA934 /* Pods-MoABContactsManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoABContactsManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DB776812FCEDBA0F5857B635 /* Pods-MoABContactsManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DD2F36B245625F06DA2F5468 /* Pods-MoABContactsManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E6C4C108947B1E6F000140D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-MoABContactsManager_Tests-MoABContactsManager/Info.plist"; sourceTree = "<group>"; };
+		E8399ADC27C1B39627C4A721 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E85FBA6635A096F8A4A78461 /* MoContactSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoContactSerializer.h; sourceTree = "<group>"; };
+		EDCA68B81BF82C605C22D30C /* Pods-MoABContactsManager_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoABContactsManager_Example-environment.h"; sourceTree = "<group>"; };
+		EF77922821996FC436C7B766 /* Pods-MoABContactsManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoABContactsManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDA6FB1DC51DECFA372685F4 /* MoContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoContact.h; sourceTree = "<group>"; };
+		FE58415D3FA00BBD157D5C31 /* Pods-MoABContactsManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoABContactsManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FEFD939E68F72467D3E8CA01 /* Pods-MoABContactsManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoABContactsManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17F2EAD381A60FA21D78F76D /* Frameworks */ = {
+		28AA195946D5DD67E60946FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C65034D5E75B6F3618A34519 /* Foundation.framework in Frameworks */,
-				FF3D2CF342FD722330A77005 /* XCTest.framework in Frameworks */,
+				69459C2B694478B4B1118EF1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3AFFC51E6834944D198EC35C /* Frameworks */ = {
+		30ABA0DD493C27861473D5CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8974B8CB83C1D0143B06ECBE /* Foundation.framework in Frameworks */,
-				BAC92ABC7995580AFF3A46FF /* XCTest.framework in Frameworks */,
+				B94116F038F4426F3E733818 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F5680A6C75D84C926231031 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62A12DD8962C1FA4236FAD29 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		41FA5C5E5036AE86617F68EC /* Frameworks */ = {
+		4C9CD49AC19FB7E39D92378A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		420AD8CEFF922F6EF2C06780 /* Frameworks */ = {
+		A8CB3F804136F3E2D3B9C42B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BF9C0A7D85D0C46413FA471 /* Frameworks */ = {
+		DD677AAC4052564824E60DD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845BD3BB638B07DC3DAFA57F /* Foundation.framework in Frameworks */,
+				02F97007EAA0E394E2A6641E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F2006ECF90073A57844FF1E /* Frameworks */ = {
+		EB1AAE6446E2551205106471 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B4F5301F7DC33D30EA79BB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE326AE9EE1CFD762C9D5849 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				514A7D7875B72C981AAE8AD7 /* Foundation.framework in Frameworks */,
+				C7D5DC3319D7C78DC808EDDA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CECF6F97797CC83DC49F921 /* Pods */ = {
+		13C7736324B5E4987EDF3390 = {
 			isa = PBXGroup;
 			children = (
-				212E4D4EAEC5EA5B9B5E92BF /* Expecta */,
-				15CBA2A3DC19121FDD5CD0DC /* Specta */,
+				A1DEFF97717F20388BA6312C /* Podfile */,
+				3EA097D3E030DDBC06114D1F /* Development Pods */,
+				4A41B30BFC8859DF400EE745 /* Frameworks */,
+				3439729CE531213421D39B40 /* Products */,
+				95A04CA4D9E6F1490ABF6A51 /* Targets Support Files */,
 			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
-		15CBA2A3DC19121FDD5CD0DC /* Specta */ = {
+		25B7D8ECCC206CD5194A4369 /* MoABContactsManager */ = {
 			isa = PBXGroup;
 			children = (
-				FD908ED3A6959E14FB4A1D20 /* SPTCallSite.h */,
-				54064582F763D856ADE10599 /* SPTCallSite.m */,
-				C6E222C40E6EE6313606E3FC /* SPTCompiledExample.h */,
-				5083FA4E8AB6BD5808A75742 /* SPTCompiledExample.m */,
-				C4053BEBC781CABF7605A04C /* SPTExample.h */,
-				1317125A3F3C1E03D3233496 /* SPTExample.m */,
-				A1033585E717D5B317119F8B /* SPTExampleGroup.h */,
-				C8D7CC1A789858D7DF7C73D4 /* SPTExampleGroup.m */,
-				40D991C69EE643C436C482AB /* SPTExcludeGlobalBeforeAfterEach.h */,
-				C6F46E0DA63197CEEF691066 /* SPTGlobalBeforeAfterEach.h */,
-				1B05C05E26E1BD004EC1E4B5 /* SPTSharedExampleGroups.h */,
-				19FDDA017C75115A851283E5 /* SPTSharedExampleGroups.m */,
-				3FF9D038B8C78CB2785610D8 /* SPTSpec.h */,
-				5068F0EB4BE436BF422CA1B3 /* SPTSpec.m */,
-				95D7E845C698B3D6A7572E69 /* SPTTestSuite.h */,
-				DD0BA7385722A32F50651BAA /* SPTTestSuite.m */,
-				76B8C7E5415A7375855B89F0 /* Specta.h */,
-				429EC44D9F5E1EB0F69001AE /* SpectaDSL.h */,
-				8AB45DB47656C9764F4F90F7 /* SpectaDSL.m */,
-				AC638323947A6E9CB0FEB778 /* SpectaTypes.h */,
-				FA14EA37FE7E0B9748C2CE6D /* SpectaUtility.h */,
-				9AD78B6E334DDBA44074C134 /* SpectaUtility.m */,
-				79D6EFD1D7604F67E73C493A /* XCTest+Private.h */,
-				112BCD949739D50C868F06F8 /* XCTestCase+Specta.h */,
-				4A1B64D5D55BF936C1811B50 /* XCTestCase+Specta.m */,
-				FC6A36DE703C29B6E1527A39 /* Support Files */,
-			);
-			path = Specta;
-			sourceTree = "<group>";
-		};
-		17961213ACD90046B664C6ED /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B1BFE0893AF391040D75370A /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1930A3EAE8FF8D4CD39ED3E5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A0C7127D88A220F3D65A297 /* Info.plist */,
-				1CC361077631B6638A5B0569 /* Info.plist */,
-				FFE0C5EF3B0BFC2C22D1E298 /* Pods-MoABContactsManager_Example-MoABContactsManager.modulemap */,
-				F69A3A2C51BFAA9FD75B20BB /* Pods-MoABContactsManager_Example-MoABContactsManager.xcconfig */,
-				3B22C2097B9E7F84B933D0DA /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */,
-				2C8AC0E7387987D309DFB961 /* Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m */,
-				4355DCD7513EE1421EDDD5DE /* Pods-MoABContactsManager_Example-MoABContactsManager-prefix.pch */,
-				5225ACD5E189C74551D830B1 /* Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h */,
-				9B7F1DE6E710002348FE564F /* Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap */,
-				77651EA6B766E2C74DA0D95D /* Pods-MoABContactsManager_Tests-MoABContactsManager.xcconfig */,
-				F862DE47F85DE1EA8782F8F6 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */,
-				ED889C0A8DC3ABA3B2625A6F /* Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m */,
-				B8378CC6A85CC824E6CDD316 /* Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch */,
-				ECB17C2249190D00452D78BA /* Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager";
-			sourceTree = "<group>";
-		};
-		212E4D4EAEC5EA5B9B5E92BF /* Expecta */ = {
-			isa = PBXGroup;
-			children = (
-				D850F15B91CF15074A140381 /* EXPBlockDefinedMatcher.h */,
-				145A23BC5AE966EC025F20C1 /* EXPBlockDefinedMatcher.m */,
-				29EAC908BF16260CD2782F3F /* EXPDefines.h */,
-				538A819A62601D773BD91BA7 /* EXPDoubleTuple.h */,
-				BE62ADA3F19B7DE7C65EA87C /* EXPDoubleTuple.m */,
-				EACDD6B91D2FFE13863BA4A1 /* EXPExpect.h */,
-				FF010E32EF141BF529C70C77 /* EXPExpect.m */,
-				42A7EAB52B8434E23A8003F2 /* EXPFloatTuple.h */,
-				54EE73976C47A9AB4C851831 /* EXPFloatTuple.m */,
-				9F2013826CA46EE3B56210C7 /* EXPMatcher.h */,
-				0563464E9EBFF9A828BC064C /* EXPMatcherHelpers.h */,
-				9E8D73AB11C18C6CD449E229 /* EXPMatcherHelpers.m */,
-				75D133D4918E91FFEEEC910F /* EXPMatchers.h */,
-				7673435D8F3AA52DBAEBDD38 /* EXPMatchers+beCloseTo.h */,
-				72D5D8844706BF7DB36B80A6 /* EXPMatchers+beCloseTo.m */,
-				05BB5566380BE1DB6D070E2B /* EXPMatchers+beFalsy.h */,
-				E2D1BA26F8AA62769A1DD463 /* EXPMatchers+beFalsy.m */,
-				C96E2DD86BBA20B4227742BC /* EXPMatchers+beGreaterThan.h */,
-				90D529AD5134BC6512526B6E /* EXPMatchers+beGreaterThan.m */,
-				463B92D2074BF07D7ACE6DC0 /* EXPMatchers+beGreaterThanOrEqualTo.h */,
-				62E9B495F070BE528138E937 /* EXPMatchers+beGreaterThanOrEqualTo.m */,
-				F53C1182F46F8E353DE3FC5F /* EXPMatchers+beIdenticalTo.h */,
-				2271BA78DA5FD16C6B027F76 /* EXPMatchers+beIdenticalTo.m */,
-				287E5A87E2BADF75569395BE /* EXPMatchers+beInTheRangeOf.h */,
-				9CFD424653773D0E7CB4FF14 /* EXPMatchers+beInTheRangeOf.m */,
-				8E0303AA0ADAC34D4DC381B2 /* EXPMatchers+beInstanceOf.h */,
-				DDF2793559628F3298DC5D59 /* EXPMatchers+beInstanceOf.m */,
-				903F5B26CFBAB2F24C542198 /* EXPMatchers+beKindOf.h */,
-				A2D6E31B1C5C65DD5E9CEF6B /* EXPMatchers+beKindOf.m */,
-				06678CC31F55E2B0A9D73823 /* EXPMatchers+beLessThan.h */,
-				5B79A330808953ACA02735B9 /* EXPMatchers+beLessThan.m */,
-				047F7D27B373D9959F12CF27 /* EXPMatchers+beLessThanOrEqualTo.h */,
-				057D36955147D44EC8875AA8 /* EXPMatchers+beLessThanOrEqualTo.m */,
-				786F66D72A28E4799EF9BA0C /* EXPMatchers+beNil.h */,
-				9E6B2BA959C0F41985A171AD /* EXPMatchers+beNil.m */,
-				F4E8D79E0F6D2404AF3C4D7B /* EXPMatchers+beSubclassOf.h */,
-				FAA34934042ED731DC904017 /* EXPMatchers+beSubclassOf.m */,
-				54B752857536DE835E9384AB /* EXPMatchers+beSupersetOf.h */,
-				3EFAB7AD1FDAD8ECE30A6138 /* EXPMatchers+beSupersetOf.m */,
-				DCE5CBAC96BA3908938C60EC /* EXPMatchers+beTruthy.h */,
-				CE2B7491E2A19FBC1CF0ED08 /* EXPMatchers+beTruthy.m */,
-				CDBD48539542D5553AB3F11E /* EXPMatchers+beginWith.h */,
-				4C42EFFEA8DF07BE17941C60 /* EXPMatchers+beginWith.m */,
-				E23E3AB11DDC0CFB94F1F062 /* EXPMatchers+conformTo.h */,
-				BC67A9A7F3A9FC8B5DFD4E13 /* EXPMatchers+conformTo.m */,
-				E75BC5CEDD81A3B9C493EDD0 /* EXPMatchers+contain.h */,
-				8B9D777BE0BE51F48D2D16F3 /* EXPMatchers+contain.m */,
-				CE7DA226196A471E7E512180 /* EXPMatchers+endWith.h */,
-				9D7A302DBEFF1FCA491B7597 /* EXPMatchers+endWith.m */,
-				76D6B5D721DF37C6BE814E89 /* EXPMatchers+equal.h */,
-				E68C53A89EF99DB01450E1BB /* EXPMatchers+equal.m */,
-				D7CA5E32EEC9BC3EC4ED5A86 /* EXPMatchers+haveCountOf.h */,
-				98C1FCC3698B8CC6DB0B43DA /* EXPMatchers+haveCountOf.m */,
-				D5D85F7FE8066761DC788D82 /* EXPMatchers+match.h */,
-				B40782E38929FD640A23E061 /* EXPMatchers+match.m */,
-				94F5D1DAF5B9D2F9F72CE53A /* EXPMatchers+postNotification.h */,
-				2C4B713408463F92A742581A /* EXPMatchers+postNotification.m */,
-				E38604DC571C485E76066221 /* EXPMatchers+raise.h */,
-				A7EFD6300589F293B23381DF /* EXPMatchers+raise.m */,
-				BA9C7BC992024EB8D33D0C6A /* EXPMatchers+raiseWithReason.h */,
-				A43E406D920BFE9542975597 /* EXPMatchers+raiseWithReason.m */,
-				BDC064EDD0497918EA7E66D1 /* EXPMatchers+respondTo.h */,
-				3E825ACE838B7C794675FA21 /* EXPMatchers+respondTo.m */,
-				3646571381A6AA8D8BD003BD /* EXPUnsupportedObject.h */,
-				800BE3E0A5F5457A5D858629 /* EXPUnsupportedObject.m */,
-				B3C31CD4297CF0883C36CEE6 /* Expecta.h */,
-				D45519A4B27FE51AD05E91FB /* ExpectaObject.h */,
-				945F46DE753001D6E1BD337D /* ExpectaObject.m */,
-				5AE29A15CBB7CA2A56DD7107 /* ExpectaSupport.h */,
-				FA6F91C61CBC1407E4A122ED /* ExpectaSupport.m */,
-				0E675A046BD630B065DE98E6 /* NSObject+Expecta.h */,
-				9546118C2D3933792EEC8AE7 /* NSValue+Expecta.h */,
-				DA1C3A2130E628F14328B466 /* NSValue+Expecta.m */,
-				591DEA5A3A1C6407DE8CE14C /* Support Files */,
-			);
-			path = Expecta;
-			sourceTree = "<group>";
-		};
-		23A784EB8B51870752D21DDE /* Pods-MoABContactsManager_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				DB7EBFDD8F335AEC2A0EABED /* Info.plist */,
-				CCACCAC2BECDB290916898F1 /* Pods-MoABContactsManager_Tests.modulemap */,
-				BCE920B2B0B74F2BE88A5C60 /* Pods-MoABContactsManager_Tests-acknowledgements.markdown */,
-				A45C1F328D5073F601F8A1EA /* Pods-MoABContactsManager_Tests-acknowledgements.plist */,
-				9688EC78B1727BE99F7C8501 /* Pods-MoABContactsManager_Tests-dummy.m */,
-				4C4790102E0D20E6A20859DF /* Pods-MoABContactsManager_Tests-environment.h */,
-				F19B204F00FD2D26A3E500C1 /* Pods-MoABContactsManager_Tests-frameworks.sh */,
-				491789EDA6908C6F70B5F399 /* Pods-MoABContactsManager_Tests-resources.sh */,
-				FDC094D4CA226F1F82F36CBB /* Pods-MoABContactsManager_Tests-umbrella.h */,
-				1D3507EF734FA538ACA81034 /* Pods-MoABContactsManager_Tests.debug.xcconfig */,
-				3D02AFC50D0CD86B878B0064 /* Pods-MoABContactsManager_Tests.release.xcconfig */,
-			);
-			name = "Pods-MoABContactsManager_Tests";
-			path = "Target Support Files/Pods-MoABContactsManager_Tests";
-			sourceTree = "<group>";
-		};
-		591DEA5A3A1C6407DE8CE14C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3F5446620EEAFD3AAC2EA105 /* Info.plist */,
-				5F9ACFBC72BB228BF45F9CE5 /* Pods-MoABContactsManager_Tests-Expecta.modulemap */,
-				635A67FE6D414B8CA19273C8 /* Pods-MoABContactsManager_Tests-Expecta.xcconfig */,
-				2B3BAC4F96204467F9113101 /* Pods-MoABContactsManager_Tests-Expecta-Private.xcconfig */,
-				CB10A5E8D11FFCEA337DB019 /* Pods-MoABContactsManager_Tests-Expecta-dummy.m */,
-				EF001DF559B5AAB8F11A004F /* Pods-MoABContactsManager_Tests-Expecta-prefix.pch */,
-				54D4B729802E05F799139666 /* Pods-MoABContactsManager_Tests-Expecta-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-MoABContactsManager_Tests-Expecta";
-			sourceTree = "<group>";
-		};
-		6996194A2E295F4041757196 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C8BC8AB7CBD69F37936B67CD /* Pods-MoABContactsManager_Example */,
-				23A784EB8B51870752D21DDE /* Pods-MoABContactsManager_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6C9EF0FE591639CAA0EBA79A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A478D5F48F6E20F7FE685A0B /* MoABContactsManager.h */,
-				0AD590F4558C7AD15B95C298 /* MoABContactsManager.m */,
-				03E49363E518BE52BA48D63C /* MoContact.h */,
-				D322D568F0F92EE732F8B194 /* MoContact.m */,
-				3717B9718AEF3DBD0AF9D1AC /* MoContactSerializer.h */,
-				7C04E2D45D448792B8ABE5C5 /* MoContactSerializer.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		85D401EC83903DBE4CA3934E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				6C9EF0FE591639CAA0EBA79A /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		97AB8F6D702EB6DAA5F4B059 /* MoABContactsManager */ = {
-			isa = PBXGroup;
-			children = (
-				85D401EC83903DBE4CA3934E /* Pod */,
-				1930A3EAE8FF8D4CD39ED3E5 /* Support Files */,
+				E733A2130B212BB3D5774862 /* Pod */,
+				43A544E63BAE9B1E3E3025A8 /* Support Files */,
 			);
 			name = MoABContactsManager;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		B1BFE0893AF391040D75370A /* iOS */ = {
+		3371AA43187E97074EA2722C /* Pods-MoABContactsManager_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				31A36F960A092C4CF62F846B /* Foundation.framework */,
-				E94535AEFA9432CBEEBBB85D /* XCTest.framework */,
+				1259383C7BCF0A4DAE7A7FE1 /* Info.plist */,
+				8E7BE00BBA61E19A43682613 /* Pods-MoABContactsManager_Tests.modulemap */,
+				D88CD98969A2D499C09CA934 /* Pods-MoABContactsManager_Tests-acknowledgements.markdown */,
+				FE58415D3FA00BBD157D5C31 /* Pods-MoABContactsManager_Tests-acknowledgements.plist */,
+				94CACA2B100C33699937C0BA /* Pods-MoABContactsManager_Tests-dummy.m */,
+				B49D9735BF525B396415CEFE /* Pods-MoABContactsManager_Tests-environment.h */,
+				FEFD939E68F72467D3E8CA01 /* Pods-MoABContactsManager_Tests-frameworks.sh */,
+				A438684CA8673C3C38A872C7 /* Pods-MoABContactsManager_Tests-resources.sh */,
+				AF156FCD29863AAD230A54D3 /* Pods-MoABContactsManager_Tests-umbrella.h */,
+				EF77922821996FC436C7B766 /* Pods-MoABContactsManager_Tests.debug.xcconfig */,
+				5830535F9021CC0A0C002253 /* Pods-MoABContactsManager_Tests.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Pods-MoABContactsManager_Tests";
+			path = "Target Support Files/Pods-MoABContactsManager_Tests";
 			sourceTree = "<group>";
 		};
-		C8BC8AB7CBD69F37936B67CD /* Pods-MoABContactsManager_Example */ = {
+		3439729CE531213421D39B40 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA5FDCCB971E7C61C4544EAE /* Info.plist */,
-				CFB9BA76F48343EEB08B1335 /* Pods-MoABContactsManager_Example.modulemap */,
-				1C3081CD219040790DA9B1E6 /* Pods-MoABContactsManager_Example-acknowledgements.markdown */,
-				8E1B43CB1E1F1C052DDF8CD8 /* Pods-MoABContactsManager_Example-acknowledgements.plist */,
-				06E0300C381B6DBE4FC0971A /* Pods-MoABContactsManager_Example-dummy.m */,
-				CD8EDE82FD28E2279566EE93 /* Pods-MoABContactsManager_Example-environment.h */,
-				AD6E61C75DB407666CD1CD2D /* Pods-MoABContactsManager_Example-frameworks.sh */,
-				E8B87A05D8924E5AD15E3016 /* Pods-MoABContactsManager_Example-resources.sh */,
-				CF940CB814FC36B96F9838EC /* Pods-MoABContactsManager_Example-umbrella.h */,
-				1786EA881BD1A17279A13BA2 /* Pods-MoABContactsManager_Example.debug.xcconfig */,
-				07241B248B01DB303C1E146E /* Pods-MoABContactsManager_Example.release.xcconfig */,
+				6F395A5F394FDADD8659B8CE /* MoABContactsManager.bundle */,
+				68A7BD1D4418B7AE4914142A /* MoABContactsManager.bundle */,
+				88D78F79651353B64213B032 /* MoABContactsManager.framework */,
+				D402D9C1DFE81AFD06A15BA4 /* MoABContactsManager.framework */,
+				BACBF6A71F24768C70E75D7E /* Pods_MoABContactsManager_Example.framework */,
+				C9DF1936EC170C1D9159BBC6 /* Pods_MoABContactsManager_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EA097D3E030DDBC06114D1F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25B7D8ECCC206CD5194A4369 /* MoABContactsManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		43A544E63BAE9B1E3E3025A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7556D438BD16979236AECD27 /* Info.plist */,
+				E6C4C108947B1E6F000140D2 /* Info.plist */,
+				6347380EDF0566C68A561CC8 /* Pods-MoABContactsManager_Example-MoABContactsManager.modulemap */,
+				06010B2494C7ECE42BA575CF /* Pods-MoABContactsManager_Example-MoABContactsManager.xcconfig */,
+				A757AC15A0B4C7DC54FF90A5 /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */,
+				31877B9C6A943D0A40D34DF8 /* Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m */,
+				960A1E7FFD8771F44A0C2F29 /* Pods-MoABContactsManager_Example-MoABContactsManager-prefix.pch */,
+				165D7C867373F2913955DA22 /* Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h */,
+				86BA13938E5F460BB0DE0DBB /* Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap */,
+				0DDD18F55D495F7C8260EF3B /* Pods-MoABContactsManager_Tests-MoABContactsManager.xcconfig */,
+				4868E70512BDD5091EA9A504 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */,
+				4AD7EF4AB9E927073C1F8CE2 /* Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m */,
+				8FF2EBEE0069A5A9CEEB5191 /* Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch */,
+				D5054925949192C05E7487A0 /* Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager";
+			sourceTree = "<group>";
+		};
+		4A41B30BFC8859DF400EE745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				628C49D41E3B16D88A3C940D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		545E9738BE3316CC4279CF22 /* Pods-MoABContactsManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E8399ADC27C1B39627C4A721 /* Info.plist */,
+				28FA200964F7C500C77E9CDD /* Pods-MoABContactsManager_Example.modulemap */,
+				C3569EBE0627C09BE035F9E1 /* Pods-MoABContactsManager_Example-acknowledgements.markdown */,
+				932AE264B663CD95D08E79E1 /* Pods-MoABContactsManager_Example-acknowledgements.plist */,
+				654DF5FC61E624FB8ACC8419 /* Pods-MoABContactsManager_Example-dummy.m */,
+				EDCA68B81BF82C605C22D30C /* Pods-MoABContactsManager_Example-environment.h */,
+				95B8A9F6F7E1EDBA4E0FC45C /* Pods-MoABContactsManager_Example-frameworks.sh */,
+				B869967A37DBABF4F36B9364 /* Pods-MoABContactsManager_Example-resources.sh */,
+				CE821F09BE8DA9A81684B7CB /* Pods-MoABContactsManager_Example-umbrella.h */,
+				DB776812FCEDBA0F5857B635 /* Pods-MoABContactsManager_Example.debug.xcconfig */,
+				DD2F36B245625F06DA2F5468 /* Pods-MoABContactsManager_Example.release.xcconfig */,
 			);
 			name = "Pods-MoABContactsManager_Example";
 			path = "Target Support Files/Pods-MoABContactsManager_Example";
 			sourceTree = "<group>";
 		};
-		CB220A1F84579F584FE865EB /* Products */ = {
+		628C49D41E3B16D88A3C940D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				86FDD8DF858CAC4AF2628A21 /* Expecta.framework */,
-				A3BCD4531E4C50166F9027C6 /* MoABContactsManager.bundle */,
-				D9FA362A8AADE9D407B0B08B /* MoABContactsManager.bundle */,
-				37169DEF0FA53883CA2918E4 /* MoABContactsManager.framework */,
-				9A98B103D09C948BEF5400E3 /* MoABContactsManager.framework */,
-				EF2D1D24EFACE53F80E16465 /* Pods_MoABContactsManager_Example.framework */,
-				048E7467696B882FC6A2335C /* Pods_MoABContactsManager_Tests.framework */,
-				C07B954FDBC9EEADA5DB6522 /* Specta.framework */,
+				8C88A5490F7A7927F68CA8AD /* Foundation.framework */,
 			);
-			name = Products;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		D2107318EC92F0E8170CBE51 = {
+		95A04CA4D9E6F1490ABF6A51 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9E027750D013C5C60A6FF275 /* Podfile */,
-				E1ABA889D2A4C92F7916BD2D /* Development Pods */,
-				17961213ACD90046B664C6ED /* Frameworks */,
-				0CECF6F97797CC83DC49F921 /* Pods */,
-				CB220A1F84579F584FE865EB /* Products */,
-				6996194A2E295F4041757196 /* Targets Support Files */,
+				545E9738BE3316CC4279CF22 /* Pods-MoABContactsManager_Example */,
+				3371AA43187E97074EA2722C /* Pods-MoABContactsManager_Tests */,
 			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E1ABA889D2A4C92F7916BD2D /* Development Pods */ = {
+		9A76667D50706B0F3818E864 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				97AB8F6D702EB6DAA5F4B059 /* MoABContactsManager */,
+				AA1F8C774DC676BDF6DCC11E /* MoABContactsManager.h */,
+				D83C3029055871F2826A6859 /* MoABContactsManager.m */,
+				FDA6FB1DC51DECFA372685F4 /* MoContact.h */,
+				4D830C973453AF1C92F37C4F /* MoContact.m */,
+				E85FBA6635A096F8A4A78461 /* MoContactSerializer.h */,
+				8283CCD14AEE37E7455352E6 /* MoContactSerializer.m */,
 			);
-			name = "Development Pods";
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		FC6A36DE703C29B6E1527A39 /* Support Files */ = {
+		E733A2130B212BB3D5774862 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C98586AA5256AC9F8D26BC9D /* Info.plist */,
-				0456738E433A14E0CF011470 /* Pods-MoABContactsManager_Tests-Specta.modulemap */,
-				7C3F86CFF528A86F3F831C08 /* Pods-MoABContactsManager_Tests-Specta.xcconfig */,
-				7D4E62C92DD3727E1AE29B2D /* Pods-MoABContactsManager_Tests-Specta-Private.xcconfig */,
-				0FECF11472F61E18EAC0E31C /* Pods-MoABContactsManager_Tests-Specta-dummy.m */,
-				D0D244E5B646B73CEDBCB396 /* Pods-MoABContactsManager_Tests-Specta-prefix.pch */,
-				3FDD6E0226B929D46645ED5A /* Pods-MoABContactsManager_Tests-Specta-umbrella.h */,
+				9A76667D50706B0F3818E864 /* Classes */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-MoABContactsManager_Tests-Specta";
+			path = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0BCA13C9A226EC81FEB57FA3 /* Headers */ = {
+		24D81C40C862A6F369ED0D9C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B4FF9C2F28868BAE195CB9 /* MoABContactsManager.h in Headers */,
-				78C93679F2ADFD1ACA6A71C7 /* MoContact.h in Headers */,
-				6D5093EAC70E8C133E384013 /* MoContactSerializer.h in Headers */,
-				2792A18E8313621B471A29F0 /* Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h in Headers */,
+				BED59BD2BCBE59A35123C476 /* MoABContactsManager.h in Headers */,
+				D590FC7C15A1B7F946456115 /* MoContact.h in Headers */,
+				36CC19C8968AD6256AF686DB /* MoContactSerializer.h in Headers */,
+				A320CDADE514A3C48B0226F6 /* Pods-MoABContactsManager_Example-MoABContactsManager-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0DA49ABCD42FB16F5FFD1B0D /* Headers */ = {
+		A9A10535D5F4CE924ED14045 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B4F37D8416AC06A62756DD /* Pods-MoABContactsManager_Example-umbrella.h in Headers */,
+				DFF17F18628F601FB40DFA07 /* MoABContactsManager.h in Headers */,
+				3B22ED1492944D2BD639255A /* MoContact.h in Headers */,
+				5874A7C60B139F209D4518D5 /* MoContactSerializer.h in Headers */,
+				BEF7DB0A440A00BC30448755 /* Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51C4317E36C15F3B96DD68C0 /* Headers */ = {
+		D131F9EF0B979DD3F5F59212 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B916037F7C5801A20B13B9E /* Pods-MoABContactsManager_Tests-umbrella.h in Headers */,
+				73F948C69C7C200E62F1ADB8 /* Pods-MoABContactsManager_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A79EBE57A9BCBA00BEA6BCED /* Headers */ = {
+		F43334E58D91397072C04A7C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C4ECF1451E6ADDB3033633 /* Pods-MoABContactsManager_Tests-Specta-umbrella.h in Headers */,
-				3BF03D24972A5B448755DE80 /* SPTCallSite.h in Headers */,
-				688648D8E993583277CE91F3 /* SPTCompiledExample.h in Headers */,
-				671564CE3A922560368E15B6 /* SPTExample.h in Headers */,
-				1775B7B0A9811533E08DC574 /* SPTExampleGroup.h in Headers */,
-				BAE98B7671C39CB956A5DAD5 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */,
-				37ED6ED4501C8C5F87F7C7EF /* SPTGlobalBeforeAfterEach.h in Headers */,
-				103476F08DF8D2A1716F16CE /* SPTSharedExampleGroups.h in Headers */,
-				634902D27F62898EDFABA47B /* SPTSpec.h in Headers */,
-				05B970D9C8D901FF502E472B /* SPTTestSuite.h in Headers */,
-				671473353CBA00FF3F422ACD /* Specta.h in Headers */,
-				DCF3153E139CBFF975650DD2 /* SpectaDSL.h in Headers */,
-				4598359F8D801C79CE7A061B /* SpectaTypes.h in Headers */,
-				9AE21F680AE7299C7CE82C2E /* SpectaUtility.h in Headers */,
-				98BF95F922790E2E6C1A4C3C /* XCTest+Private.h in Headers */,
-				8E41C099627464A35D0E954A /* XCTestCase+Specta.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5943C50F4E510F98FD72C96 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD026EFEC5EED1E8F04F42E6 /* MoABContactsManager.h in Headers */,
-				9F04AF0D604AE35D68919235 /* MoContact.h in Headers */,
-				9566875ED904D4CFEDE06830 /* MoContactSerializer.h in Headers */,
-				7489C4BEA9D91FD5A42B35DC /* Pods-MoABContactsManager_Tests-MoABContactsManager-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6FA36C2146E97C55802E812 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				40EB8C6E88870C3A1A5A1A70 /* EXPBlockDefinedMatcher.h in Headers */,
-				B600C0AD4F51B9526CE61333 /* EXPDefines.h in Headers */,
-				7893C317812224CB4AF9A269 /* EXPDoubleTuple.h in Headers */,
-				5D70390EB31E528C482DFA02 /* EXPExpect.h in Headers */,
-				33880CE296749C5324958FA7 /* EXPFloatTuple.h in Headers */,
-				A1822161BE69DC3F159610F8 /* EXPMatcher.h in Headers */,
-				68343D2BC8D382ACEE5A0A6D /* EXPMatcherHelpers.h in Headers */,
-				D0B3F4810E640A9DAC2AA329 /* EXPMatchers+beCloseTo.h in Headers */,
-				847027AC00B436040C6F9CB3 /* EXPMatchers+beFalsy.h in Headers */,
-				825298E88D0A9489A1A697C1 /* EXPMatchers+beGreaterThan.h in Headers */,
-				46425F3F0A597C8027E77B6A /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
-				CD88331CF418B1F2314665C5 /* EXPMatchers+beIdenticalTo.h in Headers */,
-				7A8D42A579B8B35B9EAC92B1 /* EXPMatchers+beInTheRangeOf.h in Headers */,
-				B73C26FBE6FD300F379AF6BB /* EXPMatchers+beInstanceOf.h in Headers */,
-				EE69D5E9B51932541B22DEDA /* EXPMatchers+beKindOf.h in Headers */,
-				B679BEB0724071CEFE3C23BA /* EXPMatchers+beLessThan.h in Headers */,
-				C47B0FDAC69E1F0F199BF8DA /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
-				35A8B7EDC8E5F959D4345A7D /* EXPMatchers+beNil.h in Headers */,
-				4724E7CF6B69AF7C73CC60EA /* EXPMatchers+beSubclassOf.h in Headers */,
-				66E126AA2F9D82DEA0D4F38E /* EXPMatchers+beSupersetOf.h in Headers */,
-				933D642B6480E3C651A81667 /* EXPMatchers+beTruthy.h in Headers */,
-				622FDC8287ABE3CD55BBF8F9 /* EXPMatchers+beginWith.h in Headers */,
-				A0C9C9EFC709A52D984FC557 /* EXPMatchers+conformTo.h in Headers */,
-				5741D6D2A5C0E8A8978AF487 /* EXPMatchers+contain.h in Headers */,
-				C6F474E8A897B42C4107DFDC /* EXPMatchers+endWith.h in Headers */,
-				C476A7F2BC70C9CE7A8C32E1 /* EXPMatchers+equal.h in Headers */,
-				75DFFAE190BAD6933F6D8526 /* EXPMatchers+haveCountOf.h in Headers */,
-				CB7B0CABDD847ECCAC9033D0 /* EXPMatchers+match.h in Headers */,
-				3A6679B5D05DB366253A5442 /* EXPMatchers+postNotification.h in Headers */,
-				1A80417ECF4640C83190D0DC /* EXPMatchers+raise.h in Headers */,
-				25794B0E11CE5220E25A5F2F /* EXPMatchers+raiseWithReason.h in Headers */,
-				B299CB01799B1F0879F9F191 /* EXPMatchers+respondTo.h in Headers */,
-				86F076337D8D6F9F79C2BD66 /* EXPMatchers.h in Headers */,
-				82707A0C8984BE9F35A5F353 /* EXPUnsupportedObject.h in Headers */,
-				F0CC8156CB6CF215B39AFD01 /* Expecta.h in Headers */,
-				28AC5BC700E13B8AE2965897 /* ExpectaObject.h in Headers */,
-				EF96207AEB2D51B699671CBD /* ExpectaSupport.h in Headers */,
-				8DDCAA1217154569ABAE2E6F /* NSObject+Expecta.h in Headers */,
-				245B744E4F20CA0193DAD1AB /* NSValue+Expecta.h in Headers */,
-				0D456A2BFA01FBAB78E3B73B /* Pods-MoABContactsManager_Tests-Expecta-umbrella.h in Headers */,
+				814A95BCDB80DF1D9E32AF6E /* Pods-MoABContactsManager_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2AD91BFAB33C5CB4083560C9 /* Pods-MoABContactsManager_Example-MoABContactsManager */ = {
+		0B70AC65D6F73F8AE83B967D /* Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5504ACE7587EC9336750BE3 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example-MoABContactsManager" */;
+			buildConfigurationList = 3FD0B9CE35BF4236ABCAEF3D /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager" */;
 			buildPhases = (
-				EE6579F0B7C1B6E3625AD157 /* Sources */,
-				DE326AE9EE1CFD762C9D5849 /* Frameworks */,
-				7F72C690224048A5BCB6D698 /* Resources */,
-				0BCA13C9A226EC81FEB57FA3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				12B46FAF9E3F96867E766AD2 /* PBXTargetDependency */,
-			);
-			name = "Pods-MoABContactsManager_Example-MoABContactsManager";
-			productName = "Pods-MoABContactsManager_Example-MoABContactsManager";
-			productReference = 37169DEF0FA53883CA2918E4 /* MoABContactsManager.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		396D16B2597C168D13D4A3AE /* Pods-MoABContactsManager_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 16EAB647B48CB0EC74D36E1E /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests" */;
-			buildPhases = (
-				2C198A1EE442DE29769040C2 /* Sources */,
-				8F2006ECF90073A57844FF1E /* Frameworks */,
-				51C4317E36C15F3B96DD68C0 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4130F869BF4A9C65D2921BB6 /* PBXTargetDependency */,
-				74A568F5A10E0D5D398CE6D8 /* PBXTargetDependency */,
-				6BB0DF13E39A11B626FBEF36 /* PBXTargetDependency */,
-			);
-			name = "Pods-MoABContactsManager_Tests";
-			productName = "Pods-MoABContactsManager_Tests";
-			productReference = 048E7467696B882FC6A2335C /* Pods_MoABContactsManager_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3E8FF3601204885C923556F5 /* Pods-MoABContactsManager_Tests-Specta */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F101CAD36C52BB3F4DDE5DA8 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-Specta" */;
-			buildPhases = (
-				B9874C898DCAD8F838DA19DA /* Sources */,
-				3AFFC51E6834944D198EC35C /* Frameworks */,
-				A79EBE57A9BCBA00BEA6BCED /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-MoABContactsManager_Tests-Specta";
-			productName = "Pods-MoABContactsManager_Tests-Specta";
-			productReference = C07B954FDBC9EEADA5DB6522 /* Specta.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4DF5240CF543C4710D6C494B /* Pods-MoABContactsManager_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 64DDE6CEA018E2AAFA1F0F00 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example" */;
-			buildPhases = (
-				257C9E9F96D7137CAB0A30E2 /* Sources */,
-				3F5680A6C75D84C926231031 /* Frameworks */,
-				0DA49ABCD42FB16F5FFD1B0D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA45594778E15640EE6026DD /* PBXTargetDependency */,
-			);
-			name = "Pods-MoABContactsManager_Example";
-			productName = "Pods-MoABContactsManager_Example";
-			productReference = EF2D1D24EFACE53F80E16465 /* Pods_MoABContactsManager_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		767102DAF3B217F968681F09 /* Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79630DA2A2F9B176A5296079 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager" */;
-			buildPhases = (
-				865C01EA62122D0D372215BA /* Sources */,
-				41FA5C5E5036AE86617F68EC /* Frameworks */,
-				7AFEF9617E44302A5D93C9C1 /* Resources */,
+				CFE41B074461622639C79D4A /* Sources */,
+				A8CB3F804136F3E2D3B9C42B /* Frameworks */,
+				0E730DBF2308CE9BA66721F9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -929,52 +375,16 @@
 			);
 			name = "Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager";
 			productName = "Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager";
-			productReference = A3BCD4531E4C50166F9027C6 /* MoABContactsManager.bundle */;
+			productReference = 68A7BD1D4418B7AE4914142A /* MoABContactsManager.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		944512E6AE716697EEB88B8C /* Pods-MoABContactsManager_Tests-MoABContactsManager */ = {
+		3DB77DB67048C8A12BB6C2B8 /* Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47A157C087C4F09490C9E700 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-MoABContactsManager" */;
+			buildConfigurationList = B8687A5264F0A444A3451386 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager" */;
 			buildPhases = (
-				303FAA1631A5631BB716BD5B /* Sources */,
-				7BF9C0A7D85D0C46413FA471 /* Frameworks */,
-				DBAA460399E6E03146FAFDA5 /* Resources */,
-				B5943C50F4E510F98FD72C96 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				68E8990914D5344EFDF8A745 /* PBXTargetDependency */,
-			);
-			name = "Pods-MoABContactsManager_Tests-MoABContactsManager";
-			productName = "Pods-MoABContactsManager_Tests-MoABContactsManager";
-			productReference = 9A98B103D09C948BEF5400E3 /* MoABContactsManager.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		946AFA4D4DF26C293CBDF066 /* Pods-MoABContactsManager_Tests-Expecta */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 36C843D73F033DC7F7EE2568 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-Expecta" */;
-			buildPhases = (
-				A45A1F7A0FAAADFB9B3A4D14 /* Sources */,
-				17F2EAD381A60FA21D78F76D /* Frameworks */,
-				C6FA36C2146E97C55802E812 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-MoABContactsManager_Tests-Expecta";
-			productName = "Pods-MoABContactsManager_Tests-Expecta";
-			productReference = 86FDD8DF858CAC4AF2628A21 /* Expecta.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C10B7BFEBCE37031815A21E0 /* Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 505C83B8CD9D884A1A605E32 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager" */;
-			buildPhases = (
-				3A972630295F47DEE9A0739C /* Sources */,
-				420AD8CEFF922F6EF2C06780 /* Frameworks */,
-				FB65D986A62C7660E3444934 /* Resources */,
+				F522733FD69ECCB67CF8F70B /* Sources */,
+				4C9CD49AC19FB7E39D92378A /* Frameworks */,
+				E96D5C81B97EFCE7E39F41D1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -982,66 +392,138 @@
 			);
 			name = "Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager";
 			productName = "Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager";
-			productReference = D9FA362A8AADE9D407B0B08B /* MoABContactsManager.bundle */;
+			productReference = 6F395A5F394FDADD8659B8CE /* MoABContactsManager.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		4A3DA89A993C639CEBAB5B9E /* Pods-MoABContactsManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CB0E392F3BE74850DB064B7 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests" */;
+			buildPhases = (
+				2D97A8BC51E8C56BE4B15696 /* Sources */,
+				30ABA0DD493C27861473D5CC /* Frameworks */,
+				F43334E58D91397072C04A7C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				355178A91D78F720F33C2173 /* PBXTargetDependency */,
+			);
+			name = "Pods-MoABContactsManager_Tests";
+			productName = "Pods-MoABContactsManager_Tests";
+			productReference = C9DF1936EC170C1D9159BBC6 /* Pods_MoABContactsManager_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84CFBA4305012C1DC1962B6D /* Pods-MoABContactsManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07CD1976B15EFD585DDCD3DB /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example" */;
+			buildPhases = (
+				05908626C83A58608B1DC4C6 /* Sources */,
+				EB1AAE6446E2551205106471 /* Frameworks */,
+				D131F9EF0B979DD3F5F59212 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46036533BD17B08D1C5E2E0 /* PBXTargetDependency */,
+			);
+			name = "Pods-MoABContactsManager_Example";
+			productName = "Pods-MoABContactsManager_Example";
+			productReference = BACBF6A71F24768C70E75D7E /* Pods_MoABContactsManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B001D9DBA3C765270884FB9 /* Pods-MoABContactsManager_Tests-MoABContactsManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B1040A76682EAA1A7EA40DF /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-MoABContactsManager" */;
+			buildPhases = (
+				6A35CC41FF4B79BA547DE432 /* Sources */,
+				DD677AAC4052564824E60DD6 /* Frameworks */,
+				4193609E81ED11743C9256ED /* Resources */,
+				A9A10535D5F4CE924ED14045 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A27CEA460EFA6DC5C4A6ADD6 /* PBXTargetDependency */,
+			);
+			name = "Pods-MoABContactsManager_Tests-MoABContactsManager";
+			productName = "Pods-MoABContactsManager_Tests-MoABContactsManager";
+			productReference = D402D9C1DFE81AFD06A15BA4 /* MoABContactsManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1D4616CC63D95E3E759F004 /* Pods-MoABContactsManager_Example-MoABContactsManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5C7DF772A5788AAA5886A9C /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example-MoABContactsManager" */;
+			buildPhases = (
+				96A600B0D4F26DB43F1D3F42 /* Sources */,
+				28AA195946D5DD67E60946FE /* Frameworks */,
+				9121F70F6F4FD4B18A486ABF /* Resources */,
+				24D81C40C862A6F369ED0D9C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5A51CC67276F9EC2E168180 /* PBXTargetDependency */,
+			);
+			name = "Pods-MoABContactsManager_Example-MoABContactsManager";
+			productName = "Pods-MoABContactsManager_Example-MoABContactsManager";
+			productReference = 88D78F79651353B64213B032 /* MoABContactsManager.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		91063247B797E7CDDE87BDEB /* Project object */ = {
+		1250245EA42690AD478DDE7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = C7BE5CBE12511427CF9E884E /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = D20E051C487127409E14F997 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D2107318EC92F0E8170CBE51;
-			productRefGroup = CB220A1F84579F584FE865EB /* Products */;
+			mainGroup = 13C7736324B5E4987EDF3390;
+			productRefGroup = 3439729CE531213421D39B40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4DF5240CF543C4710D6C494B /* Pods-MoABContactsManager_Example */,
-				2AD91BFAB33C5CB4083560C9 /* Pods-MoABContactsManager_Example-MoABContactsManager */,
-				767102DAF3B217F968681F09 /* Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager */,
-				396D16B2597C168D13D4A3AE /* Pods-MoABContactsManager_Tests */,
-				946AFA4D4DF26C293CBDF066 /* Pods-MoABContactsManager_Tests-Expecta */,
-				944512E6AE716697EEB88B8C /* Pods-MoABContactsManager_Tests-MoABContactsManager */,
-				C10B7BFEBCE37031815A21E0 /* Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager */,
-				3E8FF3601204885C923556F5 /* Pods-MoABContactsManager_Tests-Specta */,
+				84CFBA4305012C1DC1962B6D /* Pods-MoABContactsManager_Example */,
+				B1D4616CC63D95E3E759F004 /* Pods-MoABContactsManager_Example-MoABContactsManager */,
+				0B70AC65D6F73F8AE83B967D /* Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager */,
+				4A3DA89A993C639CEBAB5B9E /* Pods-MoABContactsManager_Tests */,
+				8B001D9DBA3C765270884FB9 /* Pods-MoABContactsManager_Tests-MoABContactsManager */,
+				3DB77DB67048C8A12BB6C2B8 /* Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7AFEF9617E44302A5D93C9C1 /* Resources */ = {
+		0E730DBF2308CE9BA66721F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F72C690224048A5BCB6D698 /* Resources */ = {
+		4193609E81ED11743C9256ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AF79258844815E2DB103ED4 /* MoABContactsManager.bundle in Resources */,
+				A99AC18EAEEE4165FEDB90FF /* MoABContactsManager.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBAA460399E6E03146FAFDA5 /* Resources */ = {
+		9121F70F6F4FD4B18A486ABF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FB5EA0D67C2671E1D3EC068 /* MoABContactsManager.bundle in Resources */,
+				DDED3F7AA3929715E68ED85C /* MoABContactsManager.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB65D986A62C7660E3444934 /* Resources */ = {
+		E96D5C81B97EFCE7E39F41D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1051,163 +533,327 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		257C9E9F96D7137CAB0A30E2 /* Sources */ = {
+		05908626C83A58608B1DC4C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E86959834600E3B3E53A3359 /* Pods-MoABContactsManager_Example-dummy.m in Sources */,
+				7A05E11112912BB6AD7502A2 /* Pods-MoABContactsManager_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C198A1EE442DE29769040C2 /* Sources */ = {
+		2D97A8BC51E8C56BE4B15696 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EB85637FF67A3EC3F6290A4 /* Pods-MoABContactsManager_Tests-dummy.m in Sources */,
+				179C7C8867F175811D71610D /* Pods-MoABContactsManager_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		303FAA1631A5631BB716BD5B /* Sources */ = {
+		6A35CC41FF4B79BA547DE432 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78FFBBD22D52303BC34E017C /* MoABContactsManager.m in Sources */,
-				C2813A145F62702B45E76B92 /* MoContact.m in Sources */,
-				D53CDA77507B8058849FCD30 /* MoContactSerializer.m in Sources */,
-				BDB3401392C3C07088478371 /* Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m in Sources */,
+				495DE2D829BC83E376C37FFC /* MoABContactsManager.m in Sources */,
+				BEA79A3C3FDC0ADAFD536182 /* MoContact.m in Sources */,
+				85A4915B6B4CD25A265BF00D /* MoContactSerializer.m in Sources */,
+				01B859C0AA0248A1D9F6D7CC /* Pods-MoABContactsManager_Tests-MoABContactsManager-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A972630295F47DEE9A0739C /* Sources */ = {
+		96A600B0D4F26DB43F1D3F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C51D03964553777C202B0AF /* MoABContactsManager.m in Sources */,
+				2C0E3D61EB751BB111E10C05 /* MoContact.m in Sources */,
+				AF22A69C6E5BC3FF3AEC7197 /* MoContactSerializer.m in Sources */,
+				C29C7711D91368B9006BD34B /* Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE41B074461622639C79D4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		865C01EA62122D0D372215BA /* Sources */ = {
+		F522733FD69ECCB67CF8F70B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A45A1F7A0FAAADFB9B3A4D14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BBDDC5A9978FA51A38251A43 /* EXPBlockDefinedMatcher.m in Sources */,
-				5FFB82A2AA85518D7EB9F072 /* EXPDoubleTuple.m in Sources */,
-				93E6DE7F33D169498B870368 /* EXPExpect.m in Sources */,
-				E650CF2C774B03AE37ECE527 /* EXPFloatTuple.m in Sources */,
-				580F443FAC01297C51F7945E /* EXPMatcherHelpers.m in Sources */,
-				2EEC4B746F185253D697F4A3 /* EXPMatchers+beCloseTo.m in Sources */,
-				59E91591A1ED6BC74AAADEBA /* EXPMatchers+beFalsy.m in Sources */,
-				21B8F924FF89FDA83B0CF1E3 /* EXPMatchers+beGreaterThan.m in Sources */,
-				AFFC20D77A1BF2ACC6787C95 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
-				90457AA48EDF7053BBFCC59F /* EXPMatchers+beIdenticalTo.m in Sources */,
-				119000D5EABAB7AF05E79631 /* EXPMatchers+beInTheRangeOf.m in Sources */,
-				98E84EE80B1DD140C89A6BBE /* EXPMatchers+beInstanceOf.m in Sources */,
-				FA84A956AFE3058C43917F31 /* EXPMatchers+beKindOf.m in Sources */,
-				69B75B3259E44FDE9B1818E6 /* EXPMatchers+beLessThan.m in Sources */,
-				3F7493766850BEE2C5C51C5C /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
-				C5C66B5E7AB0A178881F49CD /* EXPMatchers+beNil.m in Sources */,
-				03B88FB80399EF21F3FD00C9 /* EXPMatchers+beSubclassOf.m in Sources */,
-				A08BDD396CF1A1642EC94D94 /* EXPMatchers+beSupersetOf.m in Sources */,
-				B44142937ED7203455208246 /* EXPMatchers+beTruthy.m in Sources */,
-				FF07AD9A727FECE91A7BA7AB /* EXPMatchers+beginWith.m in Sources */,
-				45740C44B9C48AD2045E04F6 /* EXPMatchers+conformTo.m in Sources */,
-				044159B5736D4932F60A0D1F /* EXPMatchers+contain.m in Sources */,
-				DBDDC37F9CB5C9C1FE971568 /* EXPMatchers+endWith.m in Sources */,
-				ACB12234DE72D2239A6ACB4A /* EXPMatchers+equal.m in Sources */,
-				21C02D3B861A88A9C7966674 /* EXPMatchers+haveCountOf.m in Sources */,
-				58EC93843F9EA843A3991970 /* EXPMatchers+match.m in Sources */,
-				4CEF4FDB65938C9E402D0A87 /* EXPMatchers+postNotification.m in Sources */,
-				00B14172D81E96AAC9371E24 /* EXPMatchers+raise.m in Sources */,
-				924034F99C513516C87588B7 /* EXPMatchers+raiseWithReason.m in Sources */,
-				290C1231295563A629E59235 /* EXPMatchers+respondTo.m in Sources */,
-				33B3A91A20055049A1C8C89E /* EXPUnsupportedObject.m in Sources */,
-				22F281DC5817DB73319500DC /* ExpectaObject.m in Sources */,
-				9CA0C9425B50FF2E810E89EF /* ExpectaSupport.m in Sources */,
-				0EF2259C45DFF197736CC7FC /* NSValue+Expecta.m in Sources */,
-				FDDB170FF4D69B1DDDBF06F7 /* Pods-MoABContactsManager_Tests-Expecta-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9874C898DCAD8F838DA19DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A5F1403FB78F6CF14478D6C /* Pods-MoABContactsManager_Tests-Specta-dummy.m in Sources */,
-				F53978B963B43EE20F267E82 /* SPTCallSite.m in Sources */,
-				9E7474885C0CD19F5BD23DAB /* SPTCompiledExample.m in Sources */,
-				2EB1388E991FDAB13397C4D1 /* SPTExample.m in Sources */,
-				339A2C23479CBFEC6BF0894A /* SPTExampleGroup.m in Sources */,
-				2D6E9D2CD12FBB058D77E4DB /* SPTSharedExampleGroups.m in Sources */,
-				6C87B9A99AD4F8EAFAD2536D /* SPTSpec.m in Sources */,
-				EFE232624ADB9A284F93606B /* SPTTestSuite.m in Sources */,
-				FFCCDAAC49D90A9A9359DBA9 /* SpectaDSL.m in Sources */,
-				D719001F1C8ED5AA623D0C37 /* SpectaUtility.m in Sources */,
-				2D66C0AD5C15003C7F545F88 /* XCTestCase+Specta.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE6579F0B7C1B6E3625AD157 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9DC761584B1F6DB293449EE /* MoABContactsManager.m in Sources */,
-				244BCF74912FB06E14824880 /* MoContact.m in Sources */,
-				9FC847FF632CD7FF050E5819 /* MoContactSerializer.m in Sources */,
-				74E1BED2775376599D8DE503 /* Pods-MoABContactsManager_Example-MoABContactsManager-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		12B46FAF9E3F96867E766AD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager";
-			target = 767102DAF3B217F968681F09 /* Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager */;
-			targetProxy = 1D32C574DD4706559435858B /* PBXContainerItemProxy */;
-		};
-		4130F869BF4A9C65D2921BB6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-MoABContactsManager_Tests-Expecta";
-			target = 946AFA4D4DF26C293CBDF066 /* Pods-MoABContactsManager_Tests-Expecta */;
-			targetProxy = B93E24D14F5E64CC1E93847E /* PBXContainerItemProxy */;
-		};
-		68E8990914D5344EFDF8A745 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager";
-			target = C10B7BFEBCE37031815A21E0 /* Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager */;
-			targetProxy = 48B468CFBD85C2F108F4F874 /* PBXContainerItemProxy */;
-		};
-		6BB0DF13E39A11B626FBEF36 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-MoABContactsManager_Tests-Specta";
-			target = 3E8FF3601204885C923556F5 /* Pods-MoABContactsManager_Tests-Specta */;
-			targetProxy = D4A99649716627DF0527CBE4 /* PBXContainerItemProxy */;
-		};
-		74A568F5A10E0D5D398CE6D8 /* PBXTargetDependency */ = {
+		355178A91D78F720F33C2173 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MoABContactsManager_Tests-MoABContactsManager";
-			target = 944512E6AE716697EEB88B8C /* Pods-MoABContactsManager_Tests-MoABContactsManager */;
-			targetProxy = E33A503B9F7E3615B586625F /* PBXContainerItemProxy */;
+			target = 8B001D9DBA3C765270884FB9 /* Pods-MoABContactsManager_Tests-MoABContactsManager */;
+			targetProxy = 2FF81BDF4D682373965A02C6 /* PBXContainerItemProxy */;
 		};
-		DA45594778E15640EE6026DD /* PBXTargetDependency */ = {
+		A27CEA460EFA6DC5C4A6ADD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager";
+			target = 3DB77DB67048C8A12BB6C2B8 /* Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager */;
+			targetProxy = 4E07F5A8489AB31D56E55E1B /* PBXContainerItemProxy */;
+		};
+		A46036533BD17B08D1C5E2E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MoABContactsManager_Example-MoABContactsManager";
-			target = 2AD91BFAB33C5CB4083560C9 /* Pods-MoABContactsManager_Example-MoABContactsManager */;
-			targetProxy = 70C2780FBCCF85323AD2E00E /* PBXContainerItemProxy */;
+			target = B1D4616CC63D95E3E759F004 /* Pods-MoABContactsManager_Example-MoABContactsManager */;
+			targetProxy = 3395494BB80A75A2EDC78369 /* PBXContainerItemProxy */;
+		};
+		F5A51CC67276F9EC2E168180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager";
+			target = 0B70AC65D6F73F8AE83B967D /* Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager */;
+			targetProxy = BCC3B016CAFC519244449446 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04B46A84380DFD669ECD3787 /* Release */ = {
+		136FCF752B493882D25692A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F862DE47F85DE1EA8782F8F6 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */;
+			baseConfigurationReference = A757AC15A0B4C7DC54FF90A5 /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-MoABContactsManager_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MoABContactsManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		19690C02A06454F199064AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A757AC15A0B4C7DC54FF90A5 /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Pods-MoABContactsManager_Example-MoABContactsManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Pods-MoABContactsManager_Example-MoABContactsManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MoABContactsManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22E80C8A1835D07E000B538C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A757AC15A0B4C7DC54FF90A5 /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-MoABContactsManager_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MoABContactsManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		39B4097B6C071896A5ECF5C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4868E70512BDD5091EA9A504 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-MoABContactsManager_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MoABContactsManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3D8A56125109E6C135026523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF77922821996FC436C7B766 /* Pods-MoABContactsManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests/Pods-MoABContactsManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MoABContactsManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3EDE519EC257743D342F7054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A757AC15A0B4C7DC54FF90A5 /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Pods-MoABContactsManager_Example-MoABContactsManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Pods-MoABContactsManager_Example-MoABContactsManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MoABContactsManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		513DA7EF136D3AED39A2712E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD2F36B245625F06DA2F5468 /* Pods-MoABContactsManager_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Example/Pods-MoABContactsManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MoABContactsManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C5E75FCABBBFF5DE2794002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4868E70512BDD5091EA9A504 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-MoABContactsManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MoABContactsManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66804AE33D31CAC4C825FCA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB776812FCEDBA0F5857B635 /* Pods-MoABContactsManager_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Example/Pods-MoABContactsManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MoABContactsManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		722EB1A46C546EF3F41B6148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5830535F9021CC0A0C002253 /* Pods-MoABContactsManager_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests/Pods-MoABContactsManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MoABContactsManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0EA0E7ABB5E2700B3B96002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4868E70512BDD5091EA9A504 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-MoABContactsManager_Tests";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1218,7 +864,7 @@
 			};
 			name = Release;
 		};
-		18BD8A113D0533FC6F33F680 /* Debug */ = {
+		A38017FC1E44397E7C13C904 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1250,16 +896,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		281883CC934D9C2536986764 /* Release */ = {
+		E0EDA125DA3278266EE963D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F862DE47F85DE1EA8782F8F6 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */;
+			baseConfigurationReference = 4868E70512BDD5091EA9A504 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1271,175 +917,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-MoABContactsManager/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MoABContactsManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		28EA925076ADFB075B04A127 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D02AFC50D0CD86B878B0064 /* Pods-MoABContactsManager_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests/Pods-MoABContactsManager_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MoABContactsManager_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2AEC8FC9E272B11763DCCF2E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07241B248B01DB303C1E146E /* Pods-MoABContactsManager_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Example/Pods-MoABContactsManager_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MoABContactsManager_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		442011AC8939BA423B696BFB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B3BAC4F96204467F9113101 /* Pods-MoABContactsManager_Tests-Expecta-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Tests-Expecta/Pods-MoABContactsManager_Tests-Expecta-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-Expecta/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-Expecta/Pods-MoABContactsManager_Tests-Expecta.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Expecta;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4EEE2B0351E9CCFB3EB80225 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B22C2097B9E7F84B933D0DA /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Pods-MoABContactsManager_Example-MoABContactsManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Pods-MoABContactsManager_Example-MoABContactsManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MoABContactsManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5EC397238D0C9CA1715BEB86 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1786EA881BD1A17279A13BA2 /* Pods-MoABContactsManager_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Example/Pods-MoABContactsManager_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MoABContactsManager_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6171894875629AD5A089770F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F862DE47F85DE1EA8782F8F6 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-MoABContactsManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-MoABContactsManager/Pods-MoABContactsManager_Tests-MoABContactsManager.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1452,47 +930,7 @@
 			};
 			name = Debug;
 		};
-		71C82E71EE85A7445B9EB084 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B22C2097B9E7F84B933D0DA /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Pods-MoABContactsManager_Example-MoABContactsManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Example-MoABContactsManager/Pods-MoABContactsManager_Example-MoABContactsManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MoABContactsManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8C5EE328FFC0C5CA8B734F1A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B22C2097B9E7F84B933D0DA /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-MoABContactsManager_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = MoABContactsManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		8D86692330C4C2A8A1FC3AB8 /* Release */ = {
+		F380C3EB6281A64028223E1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1519,234 +957,80 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D0F63707C570BD2E80646EE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B22C2097B9E7F84B933D0DA /* Pods-MoABContactsManager_Example-MoABContactsManager-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-MoABContactsManager_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = MoABContactsManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		E1781DEF603672F4640C64ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D4E62C92DD3727E1AE29B2D /* Pods-MoABContactsManager_Tests-Specta-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Tests-Specta/Pods-MoABContactsManager_Tests-Specta-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-Specta/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-Specta/Pods-MoABContactsManager_Tests-Specta.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Specta;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E898CEB363603B2132E530BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F862DE47F85DE1EA8782F8F6 /* Pods-MoABContactsManager_Tests-MoABContactsManager-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-MoABContactsManager_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = MoABContactsManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		EB8FE458309B3B7D9DDE0377 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D4E62C92DD3727E1AE29B2D /* Pods-MoABContactsManager_Tests-Specta-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Tests-Specta/Pods-MoABContactsManager_Tests-Specta-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-Specta/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-Specta/Pods-MoABContactsManager_Tests-Specta.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Specta;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F3543D6677607BE2A3D06A09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B3BAC4F96204467F9113101 /* Pods-MoABContactsManager_Tests-Expecta-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MoABContactsManager_Tests-Expecta/Pods-MoABContactsManager_Tests-Expecta-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-Expecta/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests-Expecta/Pods-MoABContactsManager_Tests-Expecta.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Expecta;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F87768FC0A81A329483A1632 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D3507EF734FA538ACA81034 /* Pods-MoABContactsManager_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MoABContactsManager_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MoABContactsManager_Tests/Pods-MoABContactsManager_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MoABContactsManager_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16EAB647B48CB0EC74D36E1E /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests" */ = {
+		07CD1976B15EFD585DDCD3DB /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F87768FC0A81A329483A1632 /* Debug */,
-				28EA925076ADFB075B04A127 /* Release */,
+				66804AE33D31CAC4C825FCA6 /* Debug */,
+				513DA7EF136D3AED39A2712E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36C843D73F033DC7F7EE2568 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-Expecta" */ = {
+		3FD0B9CE35BF4236ABCAEF3D /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3543D6677607BE2A3D06A09 /* Debug */,
-				442011AC8939BA423B696BFB /* Release */,
+				136FCF752B493882D25692A9 /* Debug */,
+				22E80C8A1835D07E000B538C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47A157C087C4F09490C9E700 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-MoABContactsManager" */ = {
+		7CB0E392F3BE74850DB064B7 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6171894875629AD5A089770F /* Debug */,
-				281883CC934D9C2536986764 /* Release */,
+				3D8A56125109E6C135026523 /* Debug */,
+				722EB1A46C546EF3F41B6148 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		505C83B8CD9D884A1A605E32 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager" */ = {
+		8B1040A76682EAA1A7EA40DF /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-MoABContactsManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E898CEB363603B2132E530BD /* Debug */,
-				04B46A84380DFD669ECD3787 /* Release */,
+				E0EDA125DA3278266EE963D7 /* Debug */,
+				5C5E75FCABBBFF5DE2794002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64DDE6CEA018E2AAFA1F0F00 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example" */ = {
+		B8687A5264F0A444A3451386 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-MoABContactsManager-MoABContactsManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5EC397238D0C9CA1715BEB86 /* Debug */,
-				2AEC8FC9E272B11763DCCF2E /* Release */,
+				39B4097B6C071896A5ECF5C4 /* Debug */,
+				A0EA0E7ABB5E2700B3B96002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79630DA2A2F9B176A5296079 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example-MoABContactsManager-MoABContactsManager" */ = {
+		D20E051C487127409E14F997 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0F63707C570BD2E80646EE2 /* Debug */,
-				8C5EE328FFC0C5CA8B734F1A /* Release */,
+				A38017FC1E44397E7C13C904 /* Debug */,
+				F380C3EB6281A64028223E1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5504ACE7587EC9336750BE3 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example-MoABContactsManager" */ = {
+		D5C7DF772A5788AAA5886A9C /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Example-MoABContactsManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				71C82E71EE85A7445B9EB084 /* Debug */,
-				4EEE2B0351E9CCFB3EB80225 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C7BE5CBE12511427CF9E884E /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18BD8A113D0533FC6F33F680 /* Debug */,
-				8D86692330C4C2A8A1FC3AB8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F101CAD36C52BB3F4DDE5DA8 /* Build configuration list for PBXNativeTarget "Pods-MoABContactsManager_Tests-Specta" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB8FE458309B3B7D9DDE0377 /* Debug */,
-				E1781DEF603672F4640C64ED /* Release */,
+				19690C02A06454F199064AE2 /* Debug */,
+				3EDE519EC257743D342F7054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 91063247B797E7CDDE87BDEB /* Project object */;
+	rootObject = 1250245EA42690AD478DDE7E /* Project object */;
 }
