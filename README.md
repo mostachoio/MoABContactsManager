@@ -1,5 +1,6 @@
 # MoABContactsManager
 
+[![Build Status](https://api.travis-ci.org/Alterplay/APAddressBook.svg)](https://travis-ci.org/Alterplay/APAddressBook)
 [![Version](https://img.shields.io/cocoapods/v/MoABContactsManager.svg?style=flat)](http://cocoapods.org/pods/MoABContactsManager)
 [![License](https://img.shields.io/cocoapods/l/MoABContactsManager.svg?style=flat)](http://cocoapods.org/pods/MoABContactsManager)
 [![Platform](https://img.shields.io/cocoapods/p/MoABContactsManager.svg?style=flat)](http://cocoapods.org/pods/MoABContactsManager)
