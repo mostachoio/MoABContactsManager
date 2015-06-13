@@ -29,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[MoABContactsManager sharedManager] setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"fullName" ascending:YES]]];
     [[MoABContactsManager sharedManager] setFieldsMask:MoContactFieldFirstName | MoContactFieldLastName | MoContactFieldEmails | MoContactFieldPhones | MoContactFieldThumbnailProfilePicture];
     [[MoABContactsManager sharedManager] setDelegate:self];
     
@@ -50,7 +51,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"toEditContact"]) {
+    if ([segue.identifier isEqualToString:@"toAddEditContact"]) {
         MoAddEditContactViewController *addEditContactVC  = segue.destinationViewController;
         [addEditContactVC setContact:_selectedContact];
     }
@@ -60,15 +61,17 @@
 
 - (void)loadContacts
 {
-    [[MoABContactsManager sharedManager] contacts:^(ABAuthorizationStatus authorizationStatus, NSArray *contacts) {
+    [[MoABContactsManager sharedManager] contacts:^(ABAuthorizationStatus authorizationStatus, NSArray *contacts, NSError *error) {
         
-        if (authorizationStatus == kABAuthorizationStatusAuthorized) {
-            
-            _contacts = contacts;
-            [_contactsTableView reloadData];
-            
+        if (error) {
+            NSLog(@"Error = %@", [error localizedDescription]);
         }else {
-            NSLog(@"No permissions!");
+            if (authorizationStatus == kABAuthorizationStatusAuthorized) {
+                _contacts = contacts;
+                [_contactsTableView reloadData];
+            }else {
+                NSLog(@"No permissions!");
+            }
         }
         
     }];
@@ -134,7 +137,34 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     _selectedContact = _contacts[indexPath.row];
-    [self performSegueWithIdentifier:@"toEditContact" sender:self];
+    [self performSegueWithIdentifier:@"toAddEditContact" sender:self];
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        MoContact *contact = _contacts[indexPath.row];
+        [[MoABContactsManager sharedManager] deleteContactWithId:contact.contactId completion:^(NSError *error) {
+            if (!error) {
+                NSMutableArray *mutContacts = [NSMutableArray arrayWithArray:_contacts];
+                [mutContacts removeObject:contact];
+                _contacts = mutContacts;
+                [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            }
+        }];
+        
+    }
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
 }
 
 #pragma mark - Actions
@@ -158,6 +188,12 @@
     }
     
     [self loadContacts];
+}
+
+- (IBAction)addContactButtonTouched:(UIBarButtonItem *)sender
+{
+    _selectedContact = nil;
+    [self performSegueWithIdentifier:@"toAddEditContact" sender:self];
 }
 
 

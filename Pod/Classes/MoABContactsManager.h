@@ -59,12 +59,12 @@ typedef NS_OPTIONS(NSUInteger, MoContactField)
 
 @property (weak, nonatomic) id<MoABContactsManagerDelegate> delegate;
 
-- (void)contacts:(void(^)(ABAuthorizationStatus authorizationStatus, NSArray *contacts))contactsBlock;
+- (void)contacts:(void(^)(ABAuthorizationStatus authorizationStatus, NSArray *contacts, NSError *error))contactsBlock;
 
-- (void)addContact:(MoContact *)contact;
+- (void)addContact:(MoContact *)contact completion:(void(^)(NSError *error))completion;
 
-- (void)updateContact:(MoContact *)contact;
+- (void)updateContact:(MoContact *)contact completion:(void(^)(NSError *error))completion;
 
-- (BOOL)deleteContactWithId:(NSInteger)contactId;
+- (void)deleteContactWithId:(NSInteger)contactId completion:(void(^)(NSError *error))completion;
 
 @end

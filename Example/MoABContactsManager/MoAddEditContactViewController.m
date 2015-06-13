@@ -82,7 +82,13 @@
     [newContact setPhones:@[@{@"work": _phoneTextField.text}]];
     [newContact setEmails:@[@{@"work": _emailTextField.text}]];
     
-    [[MoABContactsManager sharedManager] addContact:newContact];
+    [[MoABContactsManager sharedManager] addContact:newContact completion:^(NSError *error) {
+        
+        if (!error) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+        
+    }];
     
 }
 
@@ -94,7 +100,11 @@
     [_contact setPhones:@[@{@"work": _phoneTextField.text}]];
     [_contact setEmails:@[@{@"work": _emailTextField.text}]];
     
-    [[MoABContactsManager sharedManager] updateContact:_contact];
+    [[MoABContactsManager sharedManager] updateContact:_contact completion:^(NSError *error) {
+        if (!error) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }];
 }
 
 @end
