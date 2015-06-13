@@ -91,7 +91,7 @@ pod "MoABContactsManager"
 
 ## What's next?
 
-* Hanlde linked contacts
+* Handle linked contacts
 
 ## Author
 
