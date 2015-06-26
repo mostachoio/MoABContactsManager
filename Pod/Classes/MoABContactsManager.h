@@ -50,21 +50,45 @@ typedef NS_OPTIONS(NSUInteger, MoContactField)
 
 @end
 
+
 @interface MoABContactsManager : NSObject
 
 + (instancetype)sharedManager;
 
 @property (nonatomic, assign) MoContactField fieldsMask;
+
+/*!
+ @abstract Sort descriptors used to sort contacts
+ */
 @property (nonatomic, strong) NSArray *sortDescriptors;
 
 @property (weak, nonatomic) id<MoABContactsManagerDelegate> delegate;
 
+/*!
+ @abstract Gets contacts from AddressBook
+ @param Callback handler.
+ */
 - (void)contacts:(void(^)(ABAuthorizationStatus authorizationStatus, NSArray *contacts, NSError *error))contactsBlock;
 
+/*!
+ @abstract Adds contact to AddressBook
+ @param Contact to add
+ @param Callback handler.
+ */
 - (void)addContact:(MoContact *)contact completion:(void(^)(NSError *error))completion;
 
+/*!
+ @abstract Updates contact in AddressBook
+ @param Contact to update
+ @param Callback handler.
+ */
 - (void)updateContact:(MoContact *)contact completion:(void(^)(NSError *error))completion;
 
+/*!
+ @abstract Deletes contact in AddressBook
+ @param Id of contact to delete
+ @param Callback handler.
+ */
 - (void)deleteContactWithId:(NSInteger)contactId completion:(void(^)(NSError *error))completion;
 
 @end
