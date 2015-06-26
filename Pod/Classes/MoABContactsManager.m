@@ -92,7 +92,7 @@
                 if (!error) {
                     if (granted) {
                         [self loadContactsFromAddressBookWithCompletionBlock:^(NSArray *contacts) {
-                            
+                            contactsBlock(kABAuthorizationStatusAuthorized, contacts, nil);
                         }];
                     }else {
                         contactsBlock(kABAuthorizationStatusDenied, nil, nil);
