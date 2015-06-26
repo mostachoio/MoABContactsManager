@@ -18,6 +18,7 @@ pod "MoABContactsManager"
 ## Basic Usage
 
 ### Get all contacts
+
 ```
 [[MoABContactsManager sharedManager] contacts:^(ABAuthorizationStatus authorizationStatus, NSArray *contacts, NSError *error) {
 
@@ -87,6 +88,47 @@ pod "MoABContactsManager"
 
 ```
 [[MoABContactsManager sharedManager] setFieldsMask:MoContactFieldFirstName | MoContactFieldLastName | MoContactFieldEmails | MoContactFieldPhones | MoContactFieldThumbnailProfilePicture];
+```
+
+### Serialize Contacts
+
+```
+NSLog(@"Serialized Contact: %@", [contact asDictionary]);
+```
+
+Output:
+
+```
+{
+    "contact_id" = 888;
+    "emails" =
+            (
+                {
+                    "work" = "johndoe@work.com"
+                },
+                {
+                    "home" = "johndoe@home.com"
+                }
+            );
+    "emails_values" =     
+                    (
+                        "johndoe@mail.com",
+                        "johndoe@home.com"
+                    );
+    "first_name" = John;
+    "last_name" = Doe;
+    "full_name" = "John Doe";
+    "phones" =    
+            (
+                {
+                    "mobile" = "+13121123345";    
+                }
+            );
+    "phones_values" =     
+                    (
+                        "+13121123345"
+                    );
+}
 ```
 
 ## What's next?

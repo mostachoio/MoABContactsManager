@@ -111,20 +111,18 @@
     MoContactCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     MoContact *contact = _contacts[indexPath.row];
-    
+
     [cell.profilePictureImageView setImage:contact.thumbnailProfilePicture];
     [cell.fullNameLabel setText:contact.fullName];
     
-    if (contact.phones && [contact.phones count] > 0) {
-        NSArray *phonesValues = [contact.phones[0] allValues];
-        [cell.phoneLabel setText:[NSString stringWithFormat:@"%@", phonesValues[0]]];
+    if ([contact.phonesValues count] > 0) {
+        [cell.phoneLabel setText:[NSString stringWithFormat:@"%@", contact.phonesValues[0]]];
     }else {
         [cell.phoneLabel setText:@""];
     }
     
-    if (contact.emails && [contact.emails count] > 0) {
-        NSArray *emailsValues = [contact.emails[0] allValues];
-        [cell.emailsLabel setText:[NSString stringWithFormat:@"%@", emailsValues[0]]];
+    if ([contact.emailsValues count] > 0) {
+        [cell.emailsLabel setText:[NSString stringWithFormat:@"%@", contact.emailsValues[0]]];
     }else {
         [cell.emailsLabel setText:@""];
     }
