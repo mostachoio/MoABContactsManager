@@ -376,9 +376,10 @@
     
     ABRecordSetValue(contactRecord, kABPersonNoteProperty, (__bridge CFTypeRef)(contact.note), errorRef);
     
+    ABMutableMultiValueRef phoneNumberMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+
     if (contact.phones && [contact.phones count] > 0) {
         
-        ABMutableMultiValueRef phoneNumberMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);
         for (NSDictionary *phoneData in contact.phones) {
             
             [phoneData enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
@@ -386,13 +387,14 @@
             }];
             
         }
-        ABRecordSetValue(contactRecord, kABPersonPhoneProperty, phoneNumberMultiValue, errorRef);
-        CFRelease(phoneNumberMultiValue);
     }
+    ABRecordSetValue(contactRecord, kABPersonPhoneProperty, phoneNumberMultiValue, errorRef);
+    CFRelease(phoneNumberMultiValue);
     
+    ABMutableMultiValueRef emailsMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+
     if (contact.emails && [contact.emails count] > 0) {
         
-        ABMutableMultiValueRef emailsMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);
         for (NSDictionary *emailData in contact.emails) {
             
             [emailData enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
@@ -400,9 +402,10 @@
             }];
             
         }
-        ABRecordSetValue(contactRecord, kABPersonEmailProperty, emailsMultiValue, errorRef);
-        CFRelease(emailsMultiValue);
     }
+
+    ABRecordSetValue(contactRecord, kABPersonEmailProperty, emailsMultiValue, errorRef);
+    CFRelease(emailsMultiValue);
     
     if (contact.thumbnailProfilePicture) {
         NSData *data = UIImagePNGRepresentation(contact.thumbnailProfilePicture);
