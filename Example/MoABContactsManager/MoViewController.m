@@ -30,7 +30,7 @@
     [super viewDidLoad];
     
     [[MoABContactsManager sharedManager] setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"fullName" ascending:YES]]];
-    [[MoABContactsManager sharedManager] setFieldsMask:MoContactFieldFirstName | MoContactFieldLastName | MoContactFieldEmails | MoContactFieldPhones | MoContactFieldThumbnailProfilePicture];
+    [[MoABContactsManager sharedManager] setFieldsMask:MoContactFieldFirstName | MoContactFieldLastName | MoContactFieldEmails | MoContactFieldPhones | MoContactFieldThumbnailProfilePicture | MoContactFieldAddress];
     [[MoABContactsManager sharedManager] setDelegate:self];
     
 }
@@ -111,7 +111,9 @@
     MoContactCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     MoContact *contact = _contacts[indexPath.row];
-
+    
+    NSLog(@"Serialized = %@", [contact asDictionary]);
+    
     [cell.profilePictureImageView setImage:contact.thumbnailProfilePicture];
     [cell.fullNameLabel setText:contact.fullName];
     

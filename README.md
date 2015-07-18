@@ -121,13 +121,27 @@ Output:
     "phones" =    
             (
                 {
-                    "mobile" = "+13121123345";    
+                    "mobile" = "+13121123345"    
                 }
             );
     "phones_values" =     
                     (
                         "+13121123345"
-                    );
+                    )
+    "addresses" =     
+                (
+                    {
+                        "work" = 
+                                {
+                                    "City" = "Cupertino",
+                                    "Country" = "United States",
+                                    "CountryCode" = "us",
+                                    "State" = "CA",
+                                    "Street" = "1 Infinite Loop",
+                                    "ZIP" = "95014"
+                                }
+                    }
+                )
 }
 ```
 

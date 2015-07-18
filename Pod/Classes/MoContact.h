@@ -72,6 +72,11 @@
 @property (strong, nonatomic) NSArray *emails;
 
 /*!
+ @abstract Contact's address. [{label: {*address info*}}]
+ */
+@property (strong, nonatomic) NSArray *addresses;
+
+/*!
  @abstract Contact's nick name.
  */
 @property (strong, nonatomic) NSString *nickName;

@@ -32,6 +32,7 @@ typedef NS_OPTIONS(NSUInteger, MoContactField)
     MoContactFieldNote                      = 1 << 17,
     MoContactFieldCreatedAt                 = 1 << 18,
     MoContactFieldUpdatedAt                 = 1 << 19,
+    MoContactFieldAddress                   = 1 << 20,
     MoContactFieldDefaults                  =   MoContactFieldFirstName |
                                                 MoContactFieldLastName |
                                                 MoContactFieldPhones |

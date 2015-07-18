@@ -129,9 +129,14 @@
         
         CFRelease(person);
         
+        NSError *error = errorRef ? (__bridge NSError *)*errorRef : nil;
+        if (!error) {
+            ABRecordID contactId = ABRecordGetRecordID(person);
+            [contact setContactId:contactId];
+        }
+        
         if (completion) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                NSError *error = errorRef ? (__bridge NSError *)*errorRef : nil;
                 completion(error);
             });
         }
@@ -144,16 +149,28 @@
         CFErrorRef *errorRef = NULL;
         ABRecordID contactRecordId = (ABRecordID)contact.contactId;
         ABRecordRef person = ABAddressBookGetPersonWithRecordID(_addressBook, contactRecordId);
-        [self updateContactRecord:person withContact:contact error:errorRef];
-        ABAddressBookSave(_addressBook, errorRef);
         
-        if (completion) {
+        if (person) {
             
-            NSError *error = errorRef ? (__bridge NSError *)*errorRef : nil;
+            [self updateContactRecord:person withContact:contact error:errorRef];
+            ABAddressBookSave(_addressBook, errorRef);
+            
+            if (completion) {
+                
+                NSError *error = errorRef ? (__bridge NSError *)*errorRef : nil;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completion(error);
+                });
+            }
+            
+        }else {
             dispatch_async(dispatch_get_main_queue(), ^{
-                completion(error);
+                if (completion) {
+                    completion(nil);
+                }
             });
         }
+        
     });
 }
 
@@ -242,6 +259,10 @@
                 [contact setEmails:[self arrayFromProperty:kABPersonEmailProperty ofContact:contactRecord]];
             }
             
+            if (_fieldsMask & MoContactFieldAddress) {
+                [contact setAddresses:[self arrayFromProperty:kABPersonAddressProperty ofContact:contactRecord]];
+            }
+            
             if (_fieldsMask & MoContactFieldNickName) {
                 [contact setNickName:[self objectFromProperty:kABPersonNicknameProperty ofContact:contactRecord]];
             }
@@ -312,6 +333,25 @@
 
 #pragma mark - Utils
 
+- (void)updateArrayProperty:(ABPropertyID)property withArray:(NSArray *)array ofContact:(ABRecordRef)contact error:(CFErrorRef *)errorRef
+{
+    ABMutableMultiValueRef multiValueRef = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+    
+    if (array && [array count] > 0) {
+        
+        for (NSDictionary *data in array) {
+            
+            [data enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+                ABMultiValueAddValueAndLabel(multiValueRef, (__bridge CFTypeRef)(obj), (__bridge CFTypeRef)(key), NULL);
+            }];
+            
+        }
+    }
+    ABRecordSetValue(contact, property, multiValueRef, errorRef);
+    CFRelease(multiValueRef);
+    
+}
+
 - (id)objectFromProperty:(ABPropertyID)property ofContact:(ABRecordRef)contact
 {
     CFTypeRef valueRef = ABRecordCopyValue(contact, property);
@@ -375,37 +415,12 @@
     ABRecordSetValue(contactRecord, kABPersonBirthdayProperty, (__bridge CFTypeRef)(contact.birthday), errorRef);
     
     ABRecordSetValue(contactRecord, kABPersonNoteProperty, (__bridge CFTypeRef)(contact.note), errorRef);
+
+    [self updateArrayProperty:kABPersonPhoneProperty withArray:contact.phones ofContact:contactRecord error:errorRef];
+
+    [self updateArrayProperty:kABPersonEmailProperty withArray:contact.emails ofContact:contactRecord error:errorRef];
     
-    ABMutableMultiValueRef phoneNumberMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);
-
-    if (contact.phones && [contact.phones count] > 0) {
-        
-        for (NSDictionary *phoneData in contact.phones) {
-            
-            [phoneData enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-                ABMultiValueAddValueAndLabel(phoneNumberMultiValue, (__bridge CFTypeRef)(obj), (__bridge CFTypeRef)(key), NULL);
-            }];
-            
-        }
-    }
-    ABRecordSetValue(contactRecord, kABPersonPhoneProperty, phoneNumberMultiValue, errorRef);
-    CFRelease(phoneNumberMultiValue);
-    
-    ABMutableMultiValueRef emailsMultiValue = ABMultiValueCreateMutable(kABMultiStringPropertyType);
-
-    if (contact.emails && [contact.emails count] > 0) {
-        
-        for (NSDictionary *emailData in contact.emails) {
-            
-            [emailData enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-                ABMultiValueAddValueAndLabel(emailsMultiValue, (__bridge CFTypeRef)(obj), (__bridge CFTypeRef)(key), NULL);
-            }];
-            
-        }
-    }
-
-    ABRecordSetValue(contactRecord, kABPersonEmailProperty, emailsMultiValue, errorRef);
-    CFRelease(emailsMultiValue);
+    [self updateArrayProperty:kABPersonAddressProperty withArray:contact.addresses ofContact:contactRecord error:errorRef];
     
     if (contact.thumbnailProfilePicture) {
         NSData *data = UIImagePNGRepresentation(contact.thumbnailProfilePicture);
