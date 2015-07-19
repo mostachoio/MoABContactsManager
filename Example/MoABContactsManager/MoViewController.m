@@ -112,8 +112,6 @@
     
     MoContact *contact = _contacts[indexPath.row];
     
-    NSLog(@"Serialized = %@", [contact asDictionary]);
-    
     [cell.profilePictureImageView setImage:contact.thumbnailProfilePicture];
     [cell.fullNameLabel setText:contact.fullName];
     

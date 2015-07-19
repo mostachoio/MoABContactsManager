@@ -391,41 +391,78 @@
 
 - (void)updateContactRecord:(ABRecordRef)contactRecord withContact:(MoContact *)contact error:(CFErrorRef *)errorRef
 {
-    ABRecordSetValue(contactRecord, kABPersonFirstNameProperty, (__bridge CFTypeRef)(contact.firstName), errorRef);
-    ABRecordSetValue(contactRecord, kABPersonFirstNamePhoneticProperty, (__bridge CFTypeRef)(contact.firstNamePhonetic), errorRef);
+    if ((_fieldsMask & MoContactFieldFirstName) || contact.firstName) {
+        ABRecordSetValue(contactRecord, kABPersonFirstNameProperty, (__bridge CFTypeRef)(contact.firstName), errorRef);
+    }
     
-    ABRecordSetValue(contactRecord, kABPersonLastNameProperty, (__bridge CFTypeRef)(contact.lastName), errorRef);
-    ABRecordSetValue(contactRecord, kABPersonLastNamePhoneticProperty, (__bridge CFTypeRef)(contact.lastNamePhonetic), errorRef);
+    if ((_fieldsMask & MoContactFieldFirstNamePhonetic) || contact.firstNamePhonetic) {
+        ABRecordSetValue(contactRecord, kABPersonFirstNamePhoneticProperty, (__bridge CFTypeRef)(contact.firstNamePhonetic), errorRef);
+    }
     
-    ABRecordSetValue(contactRecord, kABPersonMiddleNameProperty, (__bridge CFTypeRef)(contact.middleName), errorRef);
-    ABRecordSetValue(contactRecord, kABPersonMiddleNamePhoneticProperty, (__bridge CFTypeRef)(contact.middleNamePhonetic), errorRef);
+    if ((_fieldsMask & MoContactFieldLastName) || contact.lastName) {
+        ABRecordSetValue(contactRecord, kABPersonLastNameProperty, (__bridge CFTypeRef)(contact.lastName), errorRef);
+    }
     
-    ABRecordSetValue(contactRecord, kABPersonPrefixProperty, (__bridge CFTypeRef)(contact.prefix), errorRef);
+    if ((_fieldsMask & MoContactFieldLastNamePhonetic) || contact.lastNamePhonetic) {
+        ABRecordSetValue(contactRecord, kABPersonLastNamePhoneticProperty, (__bridge CFTypeRef)(contact.lastNamePhonetic), errorRef);
+    }
     
-    ABRecordSetValue(contactRecord, kABPersonSuffixProperty, (__bridge CFTypeRef)(contact.suffix), errorRef);
+    if ((_fieldsMask & MoContactFieldMiddleName) || contact.middleName) {
+        ABRecordSetValue(contactRecord, kABPersonMiddleNameProperty, (__bridge CFTypeRef)(contact.middleName), errorRef);
+    }
     
-    ABRecordSetValue(contactRecord, kABPersonNicknameProperty, (__bridge CFTypeRef)(contact.nickName), errorRef);
+    if ((_fieldsMask & MoContactFieldMiddleNamePhonetic) || contact.middleNamePhonetic) {
+        ABRecordSetValue(contactRecord, kABPersonMiddleNamePhoneticProperty, (__bridge CFTypeRef)(contact.middleNamePhonetic), errorRef);
+    }
     
-    ABRecordSetValue(contactRecord, kABPersonOrganizationProperty, (__bridge CFTypeRef)(contact.company), errorRef);
+    if ((_fieldsMask & MoContactFieldPrefix) || contact.prefix) {
+        ABRecordSetValue(contactRecord, kABPersonPrefixProperty, (__bridge CFTypeRef)(contact.prefix), errorRef);
+    }
     
-    ABRecordSetValue(contactRecord, kABPersonJobTitleProperty, (__bridge CFTypeRef)(contact.jobTitle), errorRef);
+    if ((_fieldsMask & MoContactFieldSuffixName) || contact.suffix) {
+        ABRecordSetValue(contactRecord, kABPersonSuffixProperty, (__bridge CFTypeRef)(contact.suffix), errorRef);
+    }
     
-    ABRecordSetValue(contactRecord, kABPersonDepartmentProperty, (__bridge CFTypeRef)(contact.department), errorRef);
+    if ((_fieldsMask & MoContactFieldNickName) || contact.nickName) {
+        ABRecordSetValue(contactRecord, kABPersonNicknameProperty, (__bridge CFTypeRef)(contact.nickName), errorRef);
+    }
     
-    ABRecordSetValue(contactRecord, kABPersonBirthdayProperty, (__bridge CFTypeRef)(contact.birthday), errorRef);
+    if ((_fieldsMask & MoContactFieldCompany) || contact.company) {
+        ABRecordSetValue(contactRecord, kABPersonOrganizationProperty, (__bridge CFTypeRef)(contact.company), errorRef);
+    }
     
-    ABRecordSetValue(contactRecord, kABPersonNoteProperty, (__bridge CFTypeRef)(contact.note), errorRef);
+    if ((_fieldsMask & MoContactFieldJobTitle) || contact.jobTitle) {
+        ABRecordSetValue(contactRecord, kABPersonJobTitleProperty, (__bridge CFTypeRef)(contact.jobTitle), errorRef);
+    }
+    
+    if ((_fieldsMask & MoContactFieldDepartment) || contact.department) {
+        ABRecordSetValue(contactRecord, kABPersonDepartmentProperty, (__bridge CFTypeRef)(contact.department), errorRef);
+    }
+    
+    if ((_fieldsMask & MoContactFieldBirthday) || contact.birthday) {
+        ABRecordSetValue(contactRecord, kABPersonBirthdayProperty, (__bridge CFTypeRef)(contact.birthday), errorRef);
+    }
+    
+    if ((_fieldsMask & MoContactFieldNote) || contact.note) {
+        ABRecordSetValue(contactRecord, kABPersonNoteProperty, (__bridge CFTypeRef)(contact.note), errorRef);
+    }
 
-    [self updateArrayProperty:kABPersonPhoneProperty withArray:contact.phones ofContact:contactRecord error:errorRef];
+    if ((_fieldsMask & MoContactFieldPhones) || (contact.phones && [contact.phones count] > 0)) {
+        [self updateArrayProperty:kABPersonPhoneProperty withArray:contact.phones ofContact:contactRecord error:errorRef];
+    }
 
-    [self updateArrayProperty:kABPersonEmailProperty withArray:contact.emails ofContact:contactRecord error:errorRef];
+    if ((_fieldsMask & MoContactFieldEmails) || (contact.emails && [contact.emails count] > 0)) {
+        [self updateArrayProperty:kABPersonEmailProperty withArray:contact.emails ofContact:contactRecord error:errorRef];
+    }
     
-    [self updateArrayProperty:kABPersonAddressProperty withArray:contact.addresses ofContact:contactRecord error:errorRef];
+    if ((_fieldsMask & MoContactFieldAddress) || (contact.addresses && [contact.addresses count] > 0)) {
+        [self updateArrayProperty:kABPersonAddressProperty withArray:contact.addresses ofContact:contactRecord error:errorRef];
+    }
     
-    if (contact.thumbnailProfilePicture) {
+    if ((_fieldsMask & MoContactFieldThumbnailProfilePicture) && contact.thumbnailProfilePicture) {
         NSData *data = UIImagePNGRepresentation(contact.thumbnailProfilePicture);
         ABPersonSetImageData(contactRecord, (__bridge CFDataRef)data, errorRef);
-    }else if(contact.originalProfilePicture) {
+    }else if((_fieldsMask & MoContactFieldOriginalProfilePicture) && contact.originalProfilePicture) {
         NSData *data = UIImagePNGRepresentation(contact.originalProfilePicture);
         ABPersonSetImageData(contactRecord, (__bridge CFDataRef)data, errorRef);
     }
